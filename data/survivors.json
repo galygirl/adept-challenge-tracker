@@ -1,0 +1,367 @@
+[
+  {
+    "id": 1,
+    "name": "Dwight Fairfield",
+    "image": "dwight.png",
+    "chapter": "Base Game",
+    "licensed": false
+  },
+  {
+    "id": 2,
+    "name": "Meg Thomas",
+    "image": "meg.png",
+    "chapter": "Base Game",
+    "licensed": false
+  },
+  {
+    "id": 3,
+    "name": "Claudette Morel",
+    "image": "claudette.png",
+    "chapter": "Base Game",
+    "licensed": false
+  },
+  {
+    "id": 4,
+    "name": "Jake Park",
+    "image": "jake.png",
+    "chapter": "Base Game",
+    "licensed": false
+  },
+  {
+    "id": 5,
+    "name": "Nea Karlsson",
+    "image": "nea.png",
+    "chapter": "Base Game",
+    "licensed": false
+  },
+  {
+    "id": 6,
+    "name": "Laurie Strode",
+    "image": "laurie.png",
+    "chapter": "Halloween",
+    "licensed": true
+  },
+  {
+    "id": 7,
+    "name": "Ace Visconti",
+    "image": "ace.png",
+    "chapter": "Of Flesh and Mud",
+    "licensed": false
+  },
+  {
+    "id": 8,
+    "name": "Feng Min",
+    "image": "feng.png",
+    "chapter": "Spark of Madness",
+    "licensed": false
+  },
+  {
+    "id": 9,
+    "name": "David King",
+    "image": "david.png",
+    "chapter": "A Lullaby for the Dark",
+    "licensed": false
+  },
+  {
+    "id": 10,
+    "name": "Quentin Smith",
+    "image": "quentin.png",
+    "chapter": "A Nightmare on Elm Street",
+    "licensed": true
+  },
+  {
+    "id": 11,
+    "name": "Detective Tapp",
+    "image": "tapp.png",
+    "chapter": "The Saw Chapter",
+    "licensed": true
+  },
+  {
+    "id": 12,
+    "name": "Kate Denson",
+    "image": "kate.png",
+    "chapter": "Curtain Call",
+    "licensed": false
+  },
+  {
+    "id": 13,
+    "name": "Adam Francis",
+    "image": "adam.png",
+    "chapter": "Shattered Bloodline",
+    "licensed": false
+  },
+  {
+    "id": 14,
+    "name": "Jeff Johansen",
+    "image": "jeff.png",
+    "chapter": "Darkness Among Us",
+    "licensed": false
+  },
+  {
+    "id": 15,
+    "name": "Jane Romero",
+    "image": "jane.png",
+    "chapter": "Demise of the Faithful",
+    "licensed": false
+  },
+  {
+    "id": 16,
+    "name": "Ash Williams",
+    "image": "ash.png",
+    "chapter": "Ash vs Evil Dead",
+    "licensed": true
+  },
+  {
+    "id": 17,
+    "name": "Nancy Wheeler",
+    "image": "nancy.png",
+    "chapter": "Stranger Things",
+    "licensed": true
+  },
+  {
+    "id": 18,
+    "name": "Steve Harrington",
+    "image": "steve.png",
+    "chapter": "Stranger Things",
+    "licensed": true
+  },
+  {
+    "id": 19,
+    "name": "Yui Kimura",
+    "image": "yui.png",
+    "chapter": "Cursed Legacy",
+    "licensed": false
+  },
+  {
+    "id": 20,
+    "name": "Zarina Kassir",
+    "image": "zarina.png",
+    "chapter": "Chains of Hate",
+    "licensed": false
+  },
+  {
+    "id": 21,
+    "name": "Cheryl Mason",
+    "image": "cheryl.png",
+    "chapter": "Silent Hill",
+    "licensed": true
+  },
+  {
+    "id": 22,
+    "name": "Felix Richter",
+    "image": "felix.png",
+    "chapter": "Descend Beyond",
+    "licensed": false
+  },
+  {
+    "id": 23,
+    "name": "Élodie Rakoto",
+    "image": "elodie.png",
+    "chapter": "A Binding of Kin",
+    "licensed": false
+  },
+  {
+    "id": 24,
+    "name": "Yun-Jin Lee",
+    "image": "yunjin.png",
+    "chapter": "All-Kill",
+    "licensed": false
+  },
+  {
+    "id": 25,
+    "name": "Jill Valentine",
+    "image": "jill.png",
+    "chapter": "Resident Evil",
+    "licensed": true
+  },
+  {
+    "id": 26,
+    "name": "Leon S. Kennedy",
+    "image": "leon.png",
+    "chapter": "Resident Evil",
+    "licensed": true
+  },
+  {
+    "id": 27,
+    "name": "Mikaela Reid",
+    "image": "mikaela.png",
+    "chapter": "Hour of the Witch",
+    "licensed": false
+  },
+  {
+    "id": 28,
+    "name": "Jonah Vasquez",
+    "image": "jonah.png",
+    "chapter": "Portrait of a Murder",
+    "licensed": false
+  },
+  {
+    "id": 29,
+    "name": "Yoichi Asakawa",
+    "image": "yoichi.png",
+    "chapter": "Sadako Rising",
+    "licensed": true
+  },
+  {
+    "id": 30,
+    "name": "Haddie Kaur",
+    "image": "haddie.png",
+    "chapter": "Roots of Dread",
+    "licensed": false
+  },
+  {
+    "id": 31,
+    "name": "Ada Wong",
+    "image": "ada.png",
+    "chapter": "Resident Evil: PROJECT W",
+    "licensed": true
+  },
+  {
+    "id": 32,
+    "name": "Rebecca Chambers",
+    "image": "rebecca.png",
+    "chapter": "Resident Evil: PROJECT W",
+    "licensed": true
+  },
+  {
+    "id": 33,
+    "name": "Vittorio Toscano",
+    "image": "vittorio.png",
+    "chapter": "Forged in Fog",
+    "licensed": false
+  },
+  {
+    "id": 34,
+    "name": "Thalita Lyra",
+    "image": "thalita.png",
+    "chapter": "Tools of Torment",
+    "licensed": false
+  },
+  {
+    "id": 35,
+    "name": "Renato Lyra",
+    "image": "renato.png",
+    "chapter": "Tools of Torment",
+    "licensed": false
+  },
+  {
+    "id": 36,
+    "name": "Gabriel Soma",
+    "image": "gabriel.png",
+    "chapter": "End Transmission",
+    "licensed": false
+  },
+  {
+    "id": 37,
+    "name": "Nicolas Cage",
+    "image": "nicolascage.png",
+    "chapter": "Nicolas Cage",
+    "licensed": true
+  },
+  {
+    "id": 38,
+    "name": "Ellen Ripley",
+    "image": "ellen.png",
+    "chapter": "Alien",
+    "licensed": true
+  },
+  {
+    "id": 39,
+    "name": "Alan Wake",
+    "image": "alanwake.png",
+    "chapter": "Alan Wake",
+    "licensed": true
+  },
+  {
+    "id": 40,
+    "name": "Sable Ward",
+    "image": "sable.png",
+    "chapter": "All Things Wicked",
+    "licensed": false
+  },
+  {
+    "id": 41,
+    "name": "Aestri Yazar",
+    "image": "aestri.png",
+    "chapter": "Dungeons & Dragons",
+    "licensed": true
+  },
+  {
+    "id": 42,
+    "name": "Lara Croft",
+    "image": "lara.png",
+    "chapter": "Tomb Raider",
+    "licensed": true
+  },
+  {
+    "id": 43,
+    "name": "Trevor Belmont",
+    "image": "trevor.png",
+    "chapter": "Castlevania",
+    "licensed": true
+  },
+  {
+    "id": 44,
+    "name": "Taurie Cain",
+    "image": "taurie.png",
+    "chapter": "Doomed Course",
+    "licensed": false
+  },
+  {
+    "id": 45,
+    "name": "Orela Rose",
+    "image": "orela.png",
+    "chapter": "Steady Pulse",
+    "licensed": false
+  },
+  {
+    "id": 46,
+    "name": "Rick Grimes",
+    "image": "rick.png",
+    "chapter": "The Walking Dead",
+    "licensed": true
+  },
+  {
+    "id": 47,
+    "name": "Michonne Grimes",
+    "image": "michonne.png",
+    "chapter": "The Walking Dead",
+    "licensed": true
+  },
+  {
+    "id": 48,
+    "name": "Vee Boonyasak",
+    "image": "vee.png",
+    "chapter": "Five Nights at Freddy's",
+    "licensed": true
+  },
+  {
+    "id": 49,
+    "name": "Dustin Henderson",
+    "image": "dustin.png",
+    "chapter": "Stranger Things",
+    "licensed": true
+  },
+  {
+    "id": 50,
+    "name": "Eleven",
+    "image": "eleven.png",
+    "chapter": "Stranger Things",
+    "licensed": true
+  },
+  {
+    "id": 51,
+    "name": "Kwon Tae-young",
+    "image": "kwon.png",
+    "chapter": "Tokyo Ghoul",
+    "licensed": true
+ },
+ {
+    "id": 52,
+    "name": "Shane Wiigwaas",
+   "image": "shane.png",
+   "chapter": "The Boulet Brothers",
+   "licensed": true
+ }
+]
+

@@ -1,0 +1,489 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Adept Challenge Tracker</title>
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/layout.css">
+    <link rel="stylesheet" href="css/components.css">
+</head>
+
+<body>
+
+    <div class="app">
+
+    <!-- Sidebar -->
+    <aside class="sidebar">
+
+        <div class="sidebar-header">
+
+    <div class="mascot-container">
+
+        <img
+            src="assets/mascot/mascot.png"
+            alt="GalyGirl Mascot"
+            class="mascot">
+
+    </div>
+
+    <h1 class="logo">
+
+        <span class="logo-top">
+            Adept Challenge
+        </span>
+
+        <span class="logo-bottom">
+            Tracker
+        </span>
+
+    </h1>
+
+    <div class="sidebar-divider"></div>
+
+</div>
+
+        <nav class="sidebar-nav">
+
+    <button class="nav-button active" data-page="dashboard">
+
+        <span class="nav-icon">🏠</span>
+
+        <span class="nav-text">Dashboard</span>
+
+    </button>
+
+    <button class="nav-button" data-page="survivors">
+
+        <span class="nav-icon">👤</span>
+
+        <span class="nav-text">Survivors</span>
+
+    </button>
+
+    <button class="nav-button" data-page="killers">
+
+        <span class="nav-icon">🔪</span>
+
+        <span class="nav-text">Killers</span>
+
+    </button>
+
+    <button class="nav-button" data-page="settings">
+
+        <span class="nav-icon">⚙️</span>
+
+        <span class="nav-text">Settings</span>
+
+    </button>
+
+</nav>
+
+    </aside>
+
+    <!-- Main Content -->
+    <main class="content">
+
+        <!-- Dashboard -->
+<section id="dashboard" class="page active">
+
+    <h1>🏠 Dashboard</h1>
+
+    <p class="page-description">
+        Track your overall Adept Challenge progress.
+    </p>
+
+    <!-- Survivor / Killer Totals -->
+    <div class="dashboard-grid">
+
+        <div class="card">
+            <h3>👤 Survivor Adepts</h3>
+            <p id="survivorCount">0 / 51</p>
+        </div>
+
+        <div class="card">
+            <h3>🔪 Killer Adepts</h3>
+            <p id="killerCount">0 / 40</p>
+        </div>
+
+    </div>
+
+    <!-- Overall Progress -->
+    <div class="card progress-card">
+
+        <h3>🏆 Overall Adept Progress</h3>
+
+        <div class="progress">
+            <div class="progress-fill" id="overallProgress"></div>
+        </div>
+
+        <p id="overallPercent">
+            0 / 91 Characters Completed
+        </p>
+
+        <p id="progressMessage">
+            Your Adept journey begins!
+        </p>
+
+    </div>
+
+    <!-- Current Objective + Recent Activity -->
+    <div class="dashboard-grid session-grid">
+
+        <div class="card session-card">
+
+            <h3>🎮 Current Objective</h3>
+
+            <div class="session-item">
+                <strong>Character</strong>
+                <span id="currentCharacter">None Selected</span>
+            </div>
+
+            <div class="session-item">
+                <strong>Challenge</strong>
+                <span id="currentChallengeType">Survivor Adept</span>
+            </div>
+
+            <div class="session-item">
+                <strong>Result</strong>
+                <span id="currentResult">Waiting...</span>
+            </div>
+
+        </div>
+
+        <div class="card activity-card">
+
+            <h3>📝 Recent Activity</h3>
+
+            <ul class="activity-list">
+                <li>✨ Tracker Created</li>
+                <li>🎯 Ready to Begin</li>
+                <li>💜 Good Luck!</li>
+            </ul>
+
+        </div>
+
+    </div>
+
+    <!-- Current Journey -->
+    <div class="card challenge-card">
+
+        <h3>🌿 Current Journey</h3>
+
+        <div class="journey-roadmap">
+
+            <div class="journey-step active">
+
+                <div class="step-icon">🏆</div>
+
+                <div class="step-content">
+                    <h4>Phase 1</h4>
+                    <p>Complete Every Survivor Adept</p>
+                </div>
+
+            </div>
+
+            <div class="journey-line"></div>
+
+            <div class="journey-step locked">
+
+                <div class="step-icon">🚪</div>
+
+                <div class="step-content">
+                    <h4>Phase 2</h4>
+                    <p>100 Escape Challenge</p>
+                </div>
+
+            </div>
+
+            <div class="journey-line"></div>
+
+            <div class="journey-step future">
+
+                <div class="step-icon">⭐</div>
+
+                <div class="step-content">
+                    <h4>Phase 3</h4>
+                    <p>Coming Soon...</p>
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+        <!-- Survivors -->
+
+        <section id="survivors" class="page">
+
+            <h1>Survivors</h1>
+
+            <p class="page-description">
+                View and update Survivor Adept challenges.
+            </p>
+
+            <div class="page-toolbar">
+
+    <input
+        id="survivorSearch"
+        type="text"
+        placeholder="Search survivors...">
+
+    <button id="randomSurvivorBtn">
+
+        🎲 Random Survivor
+
+    </button>
+
+</div>
+
+<div id="survivorGrid"
+     class="portrait-grid"></div>
+
+        </section>
+
+        <!-- Killers -->
+
+        <section id="killers" class="page">
+
+    <h1>Killers</h1>
+
+    <p class="page-description">
+        View and update Killer Adept challenges.
+    </p>
+
+    <div class="page-toolbar">
+
+        <input
+            id="killerSearch"
+            type="text"
+            placeholder="Search killers...">
+
+        <button id="randomKillerBtn" class="random-btn">
+    🎲 <span>Random Killer</span>
+    </button>
+
+    </div>
+
+    <div id="killerGrid"
+         class="portrait-grid"></div>
+
+</section>
+    
+
+        <!-- Settings -->
+
+        <section id="settings" class="page">
+
+    <h1>Settings</h1>
+
+    <p class="page-description">
+        Manage your tracker.
+    </p>
+
+    <div class="card settings-card">
+
+        <h3>🛠️ Tracker Utilities</h3>
+
+        <div class="settings-buttons">
+
+    <button id="exportProgressBtn" class="settings-btn">
+
+    <span class="settings-icon">💾</span>
+
+    <span class="settings-text">
+        Export Progress
+    </span>
+
+</button>
+
+<button id="importProgressBtn" class="settings-btn">
+
+    <span class="settings-icon">📂</span>
+
+    <span class="settings-text">
+        Import Progress
+    </span>
+
+</button>
+
+<button id="resetProgressBtn"
+        class="settings-btn danger">
+
+    <span class="settings-icon">🔄</span>
+
+    <span class="settings-text">
+        Reset Progress
+    </span>
+
+</button>
+
+<button id="aboutBtn" class="settings-btn">
+
+    <span class="settings-icon">ℹ️</span>
+
+    <span class="settings-text">
+        About
+    </span>
+
+</button>
+
+</div>
+
+            </div>
+
+        </section>
+
+    </main>
+
+</div>
+
+<script src="js/data.js"></script>
+<script src="js/navigation.js"></script>
+<script src="js/dashboard.js"></script>
+<script src="js/survivors.js"></script>
+<script src="js/killers.js"></script>
+<script src="js/storage.js"></script>
+<script src="js/settings.js"></script>
+<script src="js/app.js"></script>
+
+<!-- Portrait Menu -->
+
+<div id="portraitMenu" class="portrait-menu hidden">
+
+    <div class="portrait-menu-content">
+
+        <h3 id="menuTitle">Survivor</h3>
+
+        <button class="menu-btn adept">
+            🟢 Adept
+        </button>
+
+        <button class="menu-btn escape">
+            🔵 Escaped
+        </button>
+
+        <button class="menu-btn failed">
+            🔴 Failed
+        </button>
+
+        <button class="menu-btn cancel">
+            Cancel
+        </button>
+
+    </div>
+
+</div>
+
+<!-- About Modal -->
+
+<div id="aboutModal" class="app-modal hidden">
+
+    <div class="app-modal-content">
+
+        <h2>🌿 Adept Challenge Tracker</h2>
+
+<p><strong>Version 2.0</strong></p>
+
+<p>
+    Created by<br>
+    <strong>GalyGirl</strong>
+</p>
+
+<p>
+    Track your Survivor and Killer Adept
+    progress in Dead by Daylight with
+    automatic saving, randomizers,
+    live search, and backup support.
+</p>
+
+<hr>
+
+<p>💾 Auto Save</p>
+<p>🎲 Random Character</p>
+<p>🔍 Live Search</p>
+<p>📂 Import / Export Progress</p>
+
+<hr>
+
+<h3>📧 Contact</h3>
+
+<p>
+    Found a bug or have a suggestion?<br>
+    I'd love to hear from you!
+</p>
+
+<p>
+    <strong>Email:</strong><br>
+
+    <a href="mailto:yourstream@email.com?subject=Adept%20Challenge%20Tracker%20Feedback"
+   class="about-email">
+    galygirl26@gmail.com
+</a>
+
+</p>
+
+<hr>
+
+<p>
+    Built with 💜 for the<br>
+    Dead by Daylight Community
+</p>
+
+<button id="closeAboutBtn">
+    Close
+</button>
+
+    </div>
+
+</div>
+
+<!-- Reset Confirmation Modal -->
+
+<div id="resetModal" class="app-modal hidden">
+
+    <div class="app-modal-content">
+
+        <h2>⚠️ Reset Progress</h2>
+
+        <p>
+            This will permanently erase:
+        </p>
+
+        <div class="reset-list">
+
+            <p>• Survivor Progress</p>
+            <p>• Killer Progress</p>
+            <p>• Current Challenge</p>
+            <p>• Recent Activity</p>
+
+        </div>
+
+        <p>
+            <strong>This action cannot be undone.</strong>
+        </p>
+
+        <div class="modal-buttons">
+
+            <button id="cancelResetBtn" class="secondary-btn">
+                Cancel
+            </button>
+
+            <button id="confirmResetBtn" class="danger-btn">
+                Reset
+            </button>
+
+        </div>
+
+    </div>
+
+</div>
+
+</body>
+</html>
