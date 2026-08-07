@@ -18,6 +18,11 @@ const pageData = {
         subtitle: "View and update Killer Adept challenges."
     },
 
+    collectionPage: {
+        title: "Collection",
+        subtitle: "Manage which chapters you own."
+    },
+
     statistics: {
         title: "Statistics",
         subtitle: "Analyze your progress and completion rates."
@@ -52,9 +57,12 @@ function initializeNavigation() {
             button.classList.add("active");
 
             // Show selected page
-            document
-                .getElementById(pageName)
-                .classList.add("active");
+document
+        .getElementById(pageName)
+        .classList.add("active");
+
+         // Update page title
+          updateHeader(pageName);
 
         });
 

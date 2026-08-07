@@ -340,13 +340,19 @@ function randomSurvivor() {
     button.textContent = "🎲 Randomizing...";
 
     // Exclude Adept survivors
-    const survivors = gameData.survivors.filter(survivor => {
+   // Exclude survivors from unowned chapters
 
-        const saved = progress.survivors[survivor.id];
+const survivors = gameData.survivors.filter(survivor => {
 
-        return !saved || saved.status !== "adept";
+    const saved = progress.survivors[survivor.id];
 
-    });
+    if (saved && saved.status === "adept") {
+        return false;
+    }
+
+    return isChapterOwned(survivor);
+
+});
 
     // Everything completed
     if (survivors.length === 0) {

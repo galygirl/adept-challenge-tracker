@@ -1,0 +1,425 @@
+[
+  {
+    "id": 1,
+    "key": "base-game",
+    "name": "Base Game",
+    "type": "base",
+    "owned": true,
+    "survivors": [1, 2, 3, 4, 5, 8],
+    "killers": [1, 2, 3, 4, 8]
+  },
+  {
+    "id": 2,
+    "key": "halloween",
+    "name": "Halloween",
+    "type": "licensed",
+    "owned": false,
+    "survivors": [6],
+    "killers": [6]
+  },
+  {
+    "id": 3,
+    "key": "of-flesh-and-mud",
+    "name": "Of Flesh and Mud",
+    "type": "original",
+    "owned": false,
+    "survivors": [7],
+    "killers": [5]
+  },
+  {
+    "id": 4,
+    "key": "spark-of-madness",
+    "name": "Spark of Madness",
+    "type": "original",
+    "owned": false,
+    "survivors": [9],
+    "killers": [7]
+  },
+  {
+    "id": 5,
+    "key": "a-lullaby-for-the-dark",
+    "name": "A Lullaby for the Dark",
+    "type": "original",
+    "owned": false,
+    "survivors": [10],
+    "killers": [8]
+  },
+  {
+    "id": 6,
+    "key": "leatherface",
+    "name": "Leatherface",
+    "type": "licensed",
+    "owned": false,
+    "survivors": [],
+    "killers": [9]
+  },
+  {
+    "id": 7,
+    "key": "a-nightmare-on-elm-street",
+    "name": "A Nightmare on Elm Street",
+    "type": "licensed",
+    "owned": false,
+    "survivors": [11],
+    "killers": [10]
+  },
+  {
+    "id": 8,
+    "key": "saw",
+    "name": "SAW",
+    "type": "licensed",
+    "owned": false,
+    "survivors": [12],
+    "killers": [11]
+  },
+  {
+    "id": 9,
+    "key": "curtain-call",
+    "name": "Curtain Call",
+    "type": "original",
+    "owned": false,
+    "survivors": [13],
+    "killers": [12]
+  },
+  {
+    "id": 10,
+    "key": "shattered-bloodline",
+    "name": "Shattered Bloodline",
+    "type": "original",
+    "owned": false,
+    "survivors": [14],
+    "killers": [13]
+  },
+  {
+    "id": 11,
+    "key": "darkness-among-us",
+    "name": "Darkness Among Us",
+    "type": "original",
+    "owned": false,
+    "survivors": [15],
+    "killers": [14]
+  },
+  {
+    "id": 12,
+    "key": "demise-of-the-faithful",
+    "name": "Demise of the Faithful",
+    "type": "original",
+    "owned": false,
+    "survivors": [16],
+    "killers": [15]
+  },
+  {
+    "id": 13,
+    "key": "ash-vs-evil-dead",
+    "name": "Ash vs Evil Dead",
+    "type": "licensed",
+    "owned": false,
+    "survivors": [17],
+    "killers": []
+  },
+  {
+    "id": 14,
+    "key": "ghost-face",
+    "name": "Ghost Face",
+    "type": "licensed",
+    "owned": false,
+    "survivors": [],
+    "killers": [16]
+  },
+  {
+    "id": 15,
+    "key": "stranger-things",
+    "name": "Stranger Things",
+    "type": "licensed",
+    "owned": false,
+    "survivors": [18, 19],
+    "killers": [17]
+  }  ,
+  {
+    "id": 16,
+    "key": "cursed-legacy",
+    "name": "Cursed Legacy",
+    "type": "original",
+    "owned": false,
+    "survivors": [20],
+    "killers": [18]
+  },
+  {
+    "id": 17,
+    "key": "chains-of-hate",
+    "name": "Chains of Hate",
+    "type": "original",
+    "owned": false,
+    "survivors": [21],
+    "killers": [19]
+  },
+  {
+    "id": 18,
+    "key": "silent-hill",
+    "name": "Silent Hill",
+    "type": "licensed",
+    "owned": false,
+    "survivors": [22],
+    "killers": [20]
+  },
+  {
+    "id": 19,
+    "key": "descend-beyond",
+    "name": "Descend Beyond",
+    "type": "original",
+    "owned": false,
+    "survivors": [23],
+    "killers": [21]
+  },
+  {
+    "id": 20,
+    "key": "a-binding-of-kin",
+    "name": "A Binding of Kin",
+    "type": "original",
+    "owned": false,
+    "survivors": [24],
+    "killers": [22]
+  },
+  {
+    "id": 21,
+    "key": "all-kill",
+    "name": "All-Kill",
+    "type": "original",
+    "owned": false,
+    "survivors": [25, 52],
+    "killers": [23]
+  },
+  {
+    "id": 22,
+    "key": "resident-evil",
+    "name": "Resident Evil",
+    "type": "licensed",
+    "owned": false,
+    "survivors": [26, 27],
+    "killers": [24]
+  },
+  {
+    "id": 23,
+    "key": "hour-of-the-witch",
+    "name": "Hour of the Witch",
+    "type": "original",
+    "owned": false,
+    "survivors": [28],
+    "killers": []
+  },
+  {
+    "id": 24,
+    "key": "portrait-of-a-murder",
+    "name": "Portrait of a Murder",
+    "type": "original",
+    "owned": false,
+    "survivors": [29],
+    "killers": [26]
+  },
+  {
+    "id": 25,
+    "key": "sadako-rising",
+    "name": "Sadako Rising",
+    "type": "licensed",
+    "owned": false,
+    "survivors": [30],
+    "killers": [27]
+  },
+  {
+    "id": 26,
+    "key": "roots-of-dread",
+    "name": "Roots of Dread",
+    "type": "original",
+    "owned": false,
+    "survivors": [31],
+    "killers": [28]
+  },
+  {
+    "id": 27,
+    "key": "resident-evil-project-w",
+    "name": "Resident Evil: PROJECT W",
+    "type": "licensed",
+    "owned": false,
+    "survivors": [32, 33],
+    "killers": [29]
+  },
+  {
+    "id": 28,
+    "key": "forged-in-fog",
+    "name": "Forged in Fog",
+    "type": "original",
+    "owned": false,
+    "survivors": [34],
+    "killers": [30]
+  },
+  {
+    "id": 29,
+    "key": "tools-of-torment",
+    "name": "Tools of Torment",
+    "type": "original",
+    "owned": false,
+    "survivors": [35, 36],
+    "killers": [31]
+  },
+  {
+    "id": 30,
+    "key": "end-transmission",
+    "name": "End Transmission",
+    "type": "original",
+    "owned": false,
+    "survivors": [37],
+    "killers": [32]
+  }  ,
+  {
+    "id": 31,
+    "key": "nicolas-cage",
+    "name": "Nicolas Cage",
+    "type": "licensed",
+    "owned": false,
+    "survivors": [38],
+    "killers": []
+  },
+  {
+    "id": 32,
+    "key": "alien",
+    "name": "Alien",
+    "type": "licensed",
+    "owned": false,
+    "survivors": [39],
+    "killers": [33]
+  },
+  {
+    "id": 33,
+    "key": "childs-play",
+    "name": "Child's Play",
+    "type": "licensed",
+    "owned": false,
+    "survivors": [],
+    "killers": [34]
+  },
+  {
+    "id": 34,
+    "key": "alan-wake",
+    "name": "Alan Wake",
+    "type": "licensed",
+    "owned": false,
+    "survivors": [40],
+    "killers": []
+  },
+  {
+    "id": 35,
+    "key": "all-things-wicked",
+    "name": "All Things Wicked",
+    "type": "original",
+    "owned": false,
+    "survivors": [41],
+    "killers": [35]
+  },
+  {
+    "id": 36,
+    "key": "dungeons-and-dragons",
+    "name": "Dungeons & Dragons",
+    "type": "licensed",
+    "owned": false,
+    "survivors": [42],
+    "killers": [36]
+  },
+  {
+    "id": 37,
+    "key": "tomb-raider",
+    "name": "Tomb Raider",
+    "type": "licensed",
+    "owned": false,
+    "survivors": [43],
+    "killers": []
+  },
+  {
+    "id": 38,
+    "key": "castlevania",
+    "name": "Castlevania",
+    "type": "licensed",
+    "owned": false,
+    "survivors": [44],
+    "killers": [37]
+  },
+  {
+    "id": 39,
+    "key": "doomed-course",
+    "name": "Doomed Course",
+    "type": "original",
+    "owned": false,
+    "survivors": [45],
+    "killers": [38]
+  },
+  {
+    "id": 40,
+    "key": "steady-pulse",
+    "name": "Steady Pulse",
+    "type": "original",
+    "owned": false,
+    "survivors": [46],
+    "killers": []
+  },
+  {
+    "id": 41,
+    "key": "the-walking-dead",
+    "name": "The Walking Dead",
+    "type": "licensed",
+    "owned": false,
+    "survivors": [47, 48],
+    "killers": []
+  },
+  {
+     "id": 42,
+  "key": "five-nights-at-freddys",
+  "name": "Five Nights at Freddy's",
+  "type": "licensed",
+  "owned": false,
+  "survivors": [],
+  "killers": [40]
+  },
+  {
+    "id": 43,
+  "key": "tokyo-ghoul",
+  "name": "Tokyo Ghoul",
+  "type": "licensed",
+  "owned": false,
+  "survivors": [],
+  "killers": [39]
+  },
+  {
+    "id": 44,
+  "key": "sinister-grace",
+  "name": "Sinister Grace",
+  "type": "original",
+  "owned": false,
+  "survivors": [49],
+  "killers": [41]
+  },
+  {
+    "id": 45,
+  "key": "stranger-things-chapter-2",
+  "name": "Stranger Things Chapter 2",
+  "type": "licensed",
+  "owned": false,
+  "survivors": [50, 51],
+  "killers": [42]
+  },
+  {
+  "id": 46,
+  "key": "the-life-road",
+  "name": "The Life Road",
+  "type": "original",
+  "owned": false,
+  "survivors": [53],
+  "killers": []
+  },
+  {
+    "id": 47,
+    "key": "the-slasher",
+    "name": "The Slasher",
+    "type": "licensed",
+    "owned": false,
+    "survivors": [],
+    "killers": [43]
+  }
+]

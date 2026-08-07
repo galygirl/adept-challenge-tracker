@@ -967,3 +967,233 @@
     text-decoration:underline;
 
 }
+
+/* ==========================================
+   Collection
+========================================== */
+
+/* ==========================================
+   Collection
+========================================== */
+
+.collection-section{
+    margin-bottom:40px;
+}
+
+.collection-section h3{
+    margin-bottom:18px;
+    padding-bottom:8px;
+    border-bottom:2px solid rgba(255,255,255,.08);
+    color:var(--accent-color);
+}
+
+.collection-grid{
+
+    display:grid;
+
+    grid-template-columns:repeat(auto-fill,minmax(280px,1fr));
+
+    gap:18px;
+
+}
+
+.chapter-card{
+
+    background:var(--panel-bg);
+
+    border:2px solid transparent;
+
+    border-radius:14px;
+
+    padding:18px;
+
+    min-height:140px;
+
+    cursor:pointer;
+
+    transition:all .2s ease;
+
+    display:flex;
+
+    flex-direction:column;
+
+}
+
+.chapter-card:hover{
+
+    transform:translateY(-3px);
+
+    border-color:var(--accent-color);
+
+    box-shadow:0 6px 18px rgba(0,0,0,.25);
+
+}
+
+.chapter-card.owned{
+
+    border-color:#46d160;
+
+}
+
+.chapter-header{
+
+    display:flex;
+
+    justify-content:space-between;
+
+    align-items:flex-start;
+
+    margin-bottom:8px;
+
+}
+
+.chapter-name{
+
+    font-size:1.05rem;
+
+    font-weight:700;
+
+    flex:1;
+
+}
+
+.chapter-checkbox{
+
+    width:18px;
+
+    height:18px;
+
+    cursor:pointer;
+
+    margin-left:12px;
+
+}
+
+.chapter-members{
+
+    margin-top:8px;
+
+    font-size:.92rem;
+
+    line-height:1.6;
+
+}
+
+.base-game-columns{
+
+    display:grid;
+
+    grid-template-columns:1fr 1fr;
+
+    gap:30px;
+
+    align-items:start;
+
+}
+
+.base-list{
+
+    display:flex;
+
+    flex-direction:column;
+
+    gap:6px;
+
+}
+
+.base-list div{
+
+    white-space:nowrap;
+
+}
+
+.base-column{
+
+    display:flex;
+
+    flex-direction:column;
+
+}
+
+.base-heading{
+
+    margin:0 0 10px 0;
+
+    font-size:.95rem;
+
+    font-weight:700;
+
+    color:var(--accent-color);
+
+}
+
+.base-list{
+
+    display:flex;
+
+    flex-direction:column;
+
+    gap:6px;
+
+}
+
+.chapter-card.base-game{
+
+    grid-column: span 2;
+
+}
+
+/* ==========================================
+   Collection Section Header
+========================================== */
+
+.collection-section-header{
+
+    display:flex;
+
+    justify-content:space-between;
+
+    align-items:center;
+
+    margin-bottom:18px;
+
+}
+
+.collection-section-header h3{
+
+    margin:0;
+
+    font-size:1.25rem;
+
+    font-weight:700;
+
+    display:flex;
+
+    align-items:center;
+
+    gap:8px;
+
+}
+
+.section-count{
+
+    font-size:.9rem;
+
+    font-weight:700;
+
+    margin-left:8px;
+
+}
+
+/* ==========================================
+   Collection Section Checkbox
+========================================== */
+
+.section-checkbox {
+
+    width: 20px;
+    height: 20px;
+
+    cursor: pointer;
+
+}

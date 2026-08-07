@@ -86,15 +86,20 @@ function randomKiller() {
 
     button.textContent = "🎲 Randomizing...";
 
-    // Don't pick completed killers
-    const killers = gameData.killers.filter(killer => {
+    // Exclude Adept killers
+// Exclude killers from unowned chapters
 
-        
-        const saved = progress.killers[killer.id];
+const killers = gameData.killers.filter(killer => {
 
-        return !saved || saved.status !== "adept";
+    const saved = progress.killers[killer.id];
 
-    });
+    if (saved && saved.status === "adept") {
+        return false;
+    }
+
+    return isChapterOwned(killer);
+
+});
 
     // Everything completed
     if (killers.length === 0) {

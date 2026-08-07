@@ -1,305 +1,346 @@
 [
-    {
-        "id": 1,
-        "name": "The Trapper",
-        "image": "K01_TheTrapper_Portrait.png",
-        "chapter": "Base Game",
-        "licensed": false
-    },
-    {
-        "id": 2,
-        "name": "The Wraith",
-        "image": "K02_TheWraith_Portrait.png",
-        "chapter": "Base Game",
-        "licensed": false
-    },
-    {
-        "id": 3,
-        "name": "The Hillbilly",
-        "image": "K03_TheHillbilly_Portrait.png",
-        "chapter": "Base Game",
-        "licensed": false
-    },
-    {
-        "id": 4,
-        "name": "The Nurse",
-        "image": "K04_TheNurse_Portrait.png",
-        "chapter": "Base Game",
-        "licensed": false
-    },
-    {
-        "id": 5,
-        "name": "The Hag",
-        "image": "K05_TheHag_Portrait.png",
-        "chapter": "Of Flesh and Mud",
-        "licensed": false
-    },
-    {
-        "id": 6,
-        "name": "The Shape",
-        "image": "K06_TheShape_Portrait.png",
-        "chapter": "Halloween",
-        "licensed": true
-    },
-    {
-        "id": 7,
-        "name": "The Doctor",
-        "image": "K07_TheDoctor_Portrait.png",
-        "chapter": "Spark of Madness",
-        "licensed": false
-    },
-    {
-        "id": 8,
-        "name": "The Huntress",
-        "image": "K08_TheHuntress_Portrait.png",
-        "chapter": "A Lullaby for the Dark",
-        "licensed": false
-    },
-    {
-        "id": 9,
-        "name": "The Cannibal",
-        "image": "K09_TheCannibal_Portrait.png",
-        "chapter": "Leatherface",
-        "licensed": true
-    },
-    {
-        "id": 10,
-        "name": "The Nightmare",
-        "image": "K10_TheNightmare_Portrait.png",
-        "chapter": "A Nightmare on Elm Street",
-        "licensed": true
-    },
-    {
-        "id": 11,
-        "name": "The Pig",
-        "image": "K11_ThePig_Portrait.png",
-        "chapter": "SAW",
-        "licensed": true
-    },
-    {
-        "id": 12,
-        "name": "The Clown",
-        "image": "K12_TheClown_Portrait.png",
-        "chapter": "Curtain Call",
-        "licensed": false
-    },
-    {
-        "id": 13,
-        "name": "The Spirit",
-        "image": "K13_TheSpirit_Portrait.png",
-        "chapter": "Shattered Bloodline",
-        "licensed": false
-    },
-    {
-        "id": 14,
-        "name": "The Legion",
-        "image": "K14_TheLegion_Portrait.png",
-        "chapter": "Darkness Among Us",
-        "licensed": false
-    },
-    {
-        "id": 15,
-        "name": "The Plague",
-        "image": "K15_ThePlague_Portrait.png",
-        "chapter": "Demise of the Faithful",
-        "licensed": false
-    },
-
-        {
-        "id": 16,
-        "name": "The Ghost Face",
-        "image": "K16_TheGhostface_Portrait.png",
-        "chapter": "Ghost Face",
-        "licensed": true
-    },
-    {
-        "id": 17,
-        "name": "The Demogorgon",
-        "image": "K17_TheDemogorgon_Portrait.png",
-        "chapter": "Stranger Things",
-        "licensed": true
-    },
-    {
-        "id": 18,
-        "name": "The Oni",
-        "image": "K18_TheOni_Portrait.png",
-        "chapter": "Cursed Legacy",
-        "licensed": false
-    },
-    {
-        "id": 19,
-        "name": "The Deathslinger",
-        "image": "K19_TheDeathslinger_Portrait.png",
-        "chapter": "Chains of Hate",
-        "licensed": false
-    },
-    {
-        "id": 20,
-        "name": "The Executioner",
-        "image": "K20_TheExecutioner_Portrait.png",
-        "chapter": "Silent Hill",
-        "licensed": true
-    },
-    {
-        "id": 21,
-        "name": "The Blight",
-        "image": "K21_TheBlight_Portrait.png",
-        "chapter": "Descend Beyond",
-        "licensed": false
-    },
-    {
-        "id": 22,
-        "name": "The Twins",
-        "image": "K22_TheTwins_Portrait.png",
-        "chapter": "A Binding of Kin",
-        "licensed": false
-    },
-    {
-        "id": 23,
-        "name": "The Trickster",
-        "image": "K23_TheTrickster_Portrait.png",
-        "chapter": "All-Kill",
-        "licensed": false
-    },
-    {
-        "id": 24,
-        "name": "The Nemesis",
-        "image": "K24_TheNemesis_Portrait.png",
-        "chapter": "Resident Evil",
-        "licensed": true
-    },
-    {
-        "id": 25,
-        "name": "The Cenobite",
-        "image": "K25_TheCenobite_Portrait.png",
-        "chapter": "Hellraiser",
-        "licensed": true
-    },
-    {
-        "id": 26,
-        "name": "The Artist",
-        "image": "K26_TheArtist_Portrait.png",
-        "chapter": "Portrait of a Murder",
-        "licensed": false
-    },
-    {
-        "id": 27,
-        "name": "The Onryō",
-        "image": "K27_TheOnryo_Portrait.png",
-        "chapter": "Ringu",
-        "licensed": true
-    },
-    {
-        "id": 28,
-        "name": "The Dredge",
-        "image": "K28_TheDredge_Portrait.png",
-        "chapter": "Roots of Dread",
-        "licensed": false
-    },
-    {
-        "id": 29,
-        "name": "The Mastermind",
-        "image": "K29_TheMasterMind_Portrait.png",
-        "chapter": "Resident Evil: PROJECT W",
-        "licensed": true
-    },
-    {
-        "id": 30,
-        "name": "The Knight",
-        "image": "K30_TheKnight_Portrait.png",
-        "chapter": "Forged in Fog",
-        "licensed": false
-    },
-
-        {
-        "id": 31,
-        "name": "The Skull Merchant",
-        "image": "K31_TheSkullMerchant_Portrait.png",
-        "chapter": "Tools of Torment",
-        "licensed": false
-    },
-    {
-        "id": 32,
-        "name": "The Singularity",
-        "image": "K32_TheSingularity_Portrait.png",
-        "chapter": "End Transmission",
-        "licensed": false
-    },
-    {
-        "id": 33,
-        "name": "The Xenomorph",
-        "image": "K33_TheXenomorph_Portrait.png",
-        "chapter": "Alien",
-        "licensed": true
-    },
-    {
-        "id": 34,
-        "name": "The Good Guy",
-        "image": "K34_Chucky_Portrait.png",
-        "chapter": "Child's Play",
-        "licensed": true
-    },
-    {
-        "id": 35,
-        "name": "The Unknown",
-        "image": "K35_TheUnknown_Portrait.png",
-        "chapter": "All Things Wicked",
-        "licensed": false
-    },
-    {
-        "id": 36,
-        "name": "The Lich",
-        "image": "K36_TheLich_Portrait.png",
-        "chapter": "Dungeons & Dragons",
-        "licensed": true
-    },
-    {
-        "id": 37,
-        "name": "The Dark Lord",
-        "image": "K37_TheDracula_Portrait.png",
-        "chapter": "Castlevania",
-        "licensed": true
-    },
-    {
-        "id": 38,
-        "name": "The Houndmaster",
-        "image": "K38_TheHoundmaster_Portrait.png",
-        "chapter": "Doomed Course",
-        "licensed": false
-    },
-    {
-        "id": 39,
-        "name": "The Ghoul",
-        "image": "K39_TheGhoul_Portrait.png",
-        "chapter": "Tokyo Ghoul",
-        "licensed": true
-    },
-    {
-        "id": 40,
-        "name": "The Animatronic",
-        "image": "K40_TheAnimatronic_Portrait.png",
-        "chapter": "Five Nights at Freddy's",
-        "licensed": true
-    },
-    {
-        "id": 41,
-        "name": "The Krause",
-        "image": "K41_TheKrause_Portrait.png",
-        "chapter": "Sinister Grace",
-        "licensed": false
-    },
-    {
-        "id": 42,
-        "name": "The First",
-        "image": "K42_TheFirst_Portrait.png",
-        "chapter": "Stranger Things Chapter 2",
-        "licensed": true
-    },
-    {
-        "id": 43,
-        "name": "The Slasher",
-        "image": "K43_TheSlasher_Portrait.png",
-        "chapter": "The Slasher",
-        "licensed": true
-    }
+  {
+    "id": 1,
+    "name": "The Trapper",
+    "image": "K01_TheTrapper_Portrait.png",
+    "chapter": "Base Game",
+    "licensed": false,
+    "owned": true
+  },
+  {
+    "id": 2,
+    "name": "The Wraith",
+    "image": "K02_TheWraith_Portrait.png",
+    "chapter": "Base Game",
+    "licensed": false,
+    "owned": true
+  },
+  {
+    "id": 3,
+    "name": "The Hillbilly",
+    "image": "K03_TheHillbilly_Portrait.png",
+    "chapter": "Base Game",
+    "licensed": false,
+    "owned": true
+  },
+  {
+    "id": 4,
+    "name": "The Nurse",
+    "image": "K04_TheNurse_Portrait.png",
+    "chapter": "Base Game",
+    "licensed": false,
+    "owned": true
+  },
+  {
+    "id": 5,
+    "name": "The Hag",
+    "image": "K05_TheHag_Portrait.png",
+    "chapter": "Of Flesh and Mud",
+    "licensed": false,
+    "owned": false
+  },
+  {
+    "id": 6,
+    "name": "The Shape",
+    "image": "K06_TheShape_Portrait.png",
+    "chapter": "Halloween",
+    "licensed": true,
+    "owned": false
+  },
+  {
+    "id": 7,
+    "name": "The Doctor",
+    "image": "K07_TheDoctor_Portrait.png",
+    "chapter": "Spark of Madness",
+    "licensed": false,
+    "owned": false
+  },
+  {
+    "id": 8,
+    "name": "The Huntress",
+    "image": "K08_TheHuntress_Portrait.png",
+    "chapter": "A Lullaby for the Dark",
+    "licensed": false,
+    "owned": true
+  },
+  {
+    "id": 9,
+    "name": "The Cannibal",
+    "image": "K09_TheCannibal_Portrait.png",
+    "chapter": "Leatherface",
+    "licensed": true,
+    "owned": false
+  },
+  {
+    "id": 10,
+    "name": "The Nightmare",
+    "image": "K10_TheNightmare_Portrait.png",
+    "chapter": "A Nightmare on Elm Street",
+    "licensed": true,
+    "owned": false
+  },
+  {
+    "id": 11,
+    "name": "The Pig",
+    "image": "K11_ThePig_Portrait.png",
+    "chapter": "SAW",
+    "licensed": true,
+    "owned": false
+  },
+  {
+    "id": 12,
+    "name": "The Clown",
+    "image": "K12_TheClown_Portrait.png",
+    "chapter": "Curtain Call",
+    "licensed": false,
+    "owned": false
+  },
+  {
+    "id": 13,
+    "name": "The Spirit",
+    "image": "K13_TheSpirit_Portrait.png",
+    "chapter": "Shattered Bloodline",
+    "licensed": false,
+    "owned": false
+  },
+  {
+    "id": 14,
+    "name": "The Legion",
+    "image": "K14_TheLegion_Portrait.png",
+    "chapter": "Darkness Among Us",
+    "licensed": false,
+    "owned": false
+  },
+  {
+    "id": 15,
+    "name": "The Plague",
+    "image": "K15_ThePlague_Portrait.png",
+    "chapter": "Demise of the Faithful",
+    "licensed": false,
+    "owned": false
+  },
+  {
+    "id": 16,
+    "name": "The Ghost Face",
+    "image": "K16_TheGhostface_Portrait.png",
+    "chapter": "Ghost Face",
+    "licensed": true,
+    "owned": false
+  },
+  {
+    "id": 17,
+    "name": "The Demogorgon",
+    "image": "K17_TheDemogorgon_Portrait.png",
+    "chapter": "Stranger Things",
+    "licensed": true,
+    "owned": false
+  },
+  {
+    "id": 18,
+    "name": "The Oni",
+    "image": "K18_TheOni_Portrait.png",
+    "chapter": "Cursed Legacy",
+    "licensed": false,
+    "owned": false
+  },
+  {
+    "id": 19,
+    "name": "The Deathslinger",
+    "image": "K19_TheDeathslinger_Portrait.png",
+    "chapter": "Chains of Hate",
+    "licensed": false,
+    "owned": false
+  },
+  {
+    "id": 20,
+    "name": "The Executioner",
+    "image": "K20_TheExecutioner_Portrait.png",
+    "chapter": "Silent Hill",
+    "licensed": true,
+    "owned": false
+  },
+  {
+    "id": 21,
+    "name": "The Blight",
+    "image": "K21_TheBlight_Portrait.png",
+    "chapter": "Descend Beyond",
+    "licensed": false,
+    "owned": false
+  },
+  {
+    "id": 22,
+    "name": "The Twins",
+    "image": "K22_TheTwins_Portrait.png",
+    "chapter": "A Binding of Kin",
+    "licensed": false,
+    "owned": false
+  },
+  {
+    "id": 23,
+    "name": "The Trickster",
+    "image": "K23_TheTrickster_Portrait.png",
+    "chapter": "All-Kill",
+    "licensed": false,
+    "owned": false
+  },
+  {
+    "id": 24,
+    "name": "The Nemesis",
+    "image": "K24_TheNemesis_Portrait.png",
+    "chapter": "Resident Evil",
+    "licensed": true,
+    "owned": false
+  },
+  {
+    "id": 25,
+    "name": "The Cenobite",
+    "image": "K25_TheCenobite_Portrait.png",
+    "chapter": "Hellraiser",
+    "licensed": true,
+    "owned": false
+  },
+  {
+    "id": 26,
+    "name": "The Artist",
+    "image": "K26_TheArtist_Portrait.png",
+    "chapter": "Portrait of a Murder",
+    "licensed": false,
+    "owned": false
+  },
+  {
+    "id": 27,
+    "name": "The Onryō",
+    "image": "K27_TheOnryo_Portrait.png",
+    "chapter": "Ringu",
+    "licensed": true,
+    "owned": false
+  },
+  {
+    "id": 28,
+    "name": "The Dredge",
+    "image": "K28_TheDredge_Portrait.png",
+    "chapter": "Roots of Dread",
+    "licensed": false,
+    "owned": false
+  },
+  {
+    "id": 29,
+    "name": "The Mastermind",
+    "image": "K29_TheMasterMind_Portrait.png",
+    "chapter": "Resident Evil: PROJECT W",
+    "licensed": true,
+    "owned": false
+  },
+  {
+    "id": 30,
+    "name": "The Knight",
+    "image": "K30_TheKnight_Portrait.png",
+    "chapter": "Forged in Fog",
+    "licensed": false,
+    "owned": false
+  },
+  {
+    "id": 31,
+    "name": "The Skull Merchant",
+    "image": "K31_TheSkullMerchant_Portrait.png",
+    "chapter": "Tools of Torment",
+    "licensed": false,
+    "owned": false
+  },
+  {
+    "id": 32,
+    "name": "The Singularity",
+    "image": "K32_TheSingularity_Portrait.png",
+    "chapter": "End Transmission",
+    "licensed": false,
+    "owned": false
+  },
+  {
+    "id": 33,
+    "name": "The Xenomorph",
+    "image": "K33_TheXenomorph_Portrait.png",
+    "chapter": "Alien",
+    "licensed": true,
+    "owned": false
+  },
+  {
+    "id": 34,
+    "name": "The Good Guy",
+    "image": "K34_Chucky_Portrait.png",
+    "chapter": "Child's Play",
+    "licensed": true,
+    "owned": false
+  },
+  {
+    "id": 35,
+    "name": "The Unknown",
+    "image": "K35_TheUnknown_Portrait.png",
+    "chapter": "All Things Wicked",
+    "licensed": false,
+    "owned": false
+  },
+  {
+    "id": 36,
+    "name": "The Lich",
+    "image": "K36_TheLich_Portrait.png",
+    "chapter": "Dungeons & Dragons",
+    "licensed": true,
+    "owned": false
+  },
+  {
+    "id": 37,
+    "name": "The Dark Lord",
+    "image": "K37_TheDracula_Portrait.png",
+    "chapter": "Castlevania",
+    "licensed": true,
+    "owned": false
+  },
+  {
+    "id": 38,
+    "name": "The Houndmaster",
+    "image": "K38_TheHoundmaster_Portrait.png",
+    "chapter": "Doomed Course",
+    "licensed": false,
+    "owned": false
+  },
+  {
+    "id": 39,
+    "name": "The Ghoul",
+    "image": "K39_TheGhoul_Portrait.png",
+    "chapter": "Tokyo Ghoul",
+    "licensed": true,
+    "owned": false
+  },
+  {
+    "id": 40,
+    "name": "The Animatronic",
+    "image": "K40_TheAnimatronic_Portrait.png",
+    "chapter": "Five Nights at Freddy's",
+    "licensed": true,
+    "owned": false
+  },
+  {
+    "id": 41,
+    "name": "The Krause",
+    "image": "K41_TheKrause_Portrait.png",
+    "chapter": "Sinister Grace",
+    "licensed": false,
+    "owned": false
+  },
+  {
+    "id": 42,
+    "name": "The First",
+    "image": "K42_TheFirst_Portrait.png",
+    "chapter": "Stranger Things Chapter 2",
+    "licensed": true,
+    "owned": false
+  },
+  {
+    "id": 43,
+    "name": "The Slasher",
+    "image": "K43_TheSlasher_Portrait.png",
+    "chapter": "The Slasher",
+    "licensed": true,
+    "owned": false
+  }
 ]

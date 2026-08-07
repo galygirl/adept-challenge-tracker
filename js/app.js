@@ -33,6 +33,9 @@ document.addEventListener("DOMContentLoaded", async () => {
     initializeKillers();
     console.log("8. Killers");
 
+    await initializeCollection();
+    console.log("8.5 Collection");
+
     initializeKillerSearch();
     console.log("8.1 Killer Search");
 
