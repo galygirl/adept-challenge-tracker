@@ -14,9 +14,13 @@ let progress = {
 
     randomizer: {
 
-    survivor: null,
+    currentSurvivor: null,
 
-    killer: null,
+    currentKiller: null,
+
+    lastSurvivor: null,
+
+    lastKiller: null,
 
     result: "Waiting..."
 
@@ -68,15 +72,27 @@ function loadProgress() {
 
         activity: loaded.activity || [],
 
-        randomizer: loaded.randomizer || {
+        randomizer: {
 
-            survivor: null,
+    currentSurvivor: loaded.randomizer?.currentSurvivor ?? null,
 
-            killer: null
+    currentKiller: loaded.randomizer?.currentKiller ?? null,
 
-        }
+    lastSurvivor: loaded.randomizer?.lastSurvivor ?? null,
+
+    lastKiller: loaded.randomizer?.lastKiller ?? null,
+
+    result: loaded.randomizer?.result ?? "Waiting..."
+
+}
 
     };
+
+    // Reset current challenge every time the app starts
+      progress.randomizer.survivor = null;
+      progress.randomizer.killer = null;
+
+      saveProgress();
 
     console.log("📂 Progress Loaded");
 

@@ -21,21 +21,6 @@ function initializeSurvivors() {
 
     });
 
-    // Restore current challenge
-    if (progress.randomizer.survivor !== null) {
-
-        const survivor = gameData.survivors.find(
-            s => s.id === progress.randomizer.survivor
-        );
-
-        if (survivor) {
-
-            setCurrentChallenge(survivor, false);
-
-        }
-
-    }
-
 }
 
 // ==========================================
@@ -120,9 +105,11 @@ function setCurrentChallenge(survivor, save = true) {
     document.getElementById("currentResult").textContent =
         "In Progress";
 
+    
     // Save
-    progress.randomizer.survivor = survivor.id;
-    progress.randomizer.result = "In Progress";
+     progress.randomizer.currentSurvivor = survivor.id;
+     progress.randomizer.lastSurvivor = survivor.id;
+     progress.randomizer.result = "In Progress";
 
     if (save) {
 
@@ -282,7 +269,7 @@ function selectResult(result) {
     // Clear challenge
     currentChallenge = null;
 
-    progress.randomizer.survivor = null;
+    progress.randomizer.currentSurvivor = null;
     progress.randomizer.result = result;
 
     saveProgress();

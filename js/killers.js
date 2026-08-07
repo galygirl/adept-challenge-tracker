@@ -20,21 +20,7 @@ function initializeKillers() {
 
     });
 
-  // Restore current killer challenge
-if (progress.randomizer.killer !== null) {
-
-    const killer = gameData.killers.find(
-        k => k.id === progress.randomizer.killer
-    );
-
-    if (killer) {
-
-        setCurrentKillerChallenge(killer);
-
-    }
-
-}
-}
+  }
 
 // ==========================================
 // Random Killer
