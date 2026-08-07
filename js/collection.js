@@ -1,34 +1,17 @@
+// =============================================
+// Collection 2.0
+// Character-Based Collection
+// =============================================
+
 // ==============================
-// Collection
+// Initialize Collection
 // ==============================
 
-let chapters = [];
+async function initializeCollection() {
 
-// ==============================
-// Load Chapters
-// ==============================
+    loadCollection();
 
-async function loadChapters() {
-
-    try {
-
-        const response = await fetch("data/chapters.json");
-
-        chapters = await response.json();
-
-        loadCollectionSave();
-
-        console.log("✔ Chapters loaded");
-
-        renderCollection();
-
-    }
-
-    catch (err) {
-
-        console.error("Failed to load chapters:", err);
-
-    }
+    renderCollection();
 
 }
 
@@ -44,81 +27,107 @@ function renderCollection() {
 
     container.innerHTML = "";
 
-    const groups = {
-        base: [],
-        original: [],
-        licensed: []
-    };
+    // ==============================
+    // Base Game
+    // ==============================
 
-    chapters.forEach(chapter => {
+    renderBaseGame(container);
 
-        if (groups[chapter.type]) {
-            groups[chapter.type].push(chapter);
-        }
+    // ==============================
+    // Survivors
+    // ==============================
 
-    });
+    renderSectionHeading(container, "👤 Survivors");
 
-    createSection("🎮 Base Game", groups.base);
+    renderCharacterSection(
+        container,
+         "🌿 Original Survivors",
+        gameData.survivors.filter(s =>
+            !s.licensed &&
+            s.chapter !== "Base Game" &&
+            s.available !== false
+        )
+    );
 
-    createSection("🌿 Original Chapters", groups.original);
+    renderCharacterSection(
+        container,
+        "🎭 Licensed Survivors",
+        gameData.survivors.filter(s =>
+            s.licensed &&
+            s.available !== false
+        )
+    );
 
-    createSection("🎭 Licensed Chapters", groups.licensed);
+    renderCharacterSection(
+        container,
+        "🚫 Unavailable Survivors",
+        gameData.survivors.filter(s =>
+            s.available === false
+        )
+    );
+
+    // ==============================
+    // Killers
+    // ==============================
+
+    renderSectionHeading(container, "🔪 Killers");
+
+    renderCharacterSection(
+        container,
+        "🌿 Original Killers",
+        gameData.killers.filter(k =>
+            !k.licensed &&
+            k.chapter !== "Base Game" &&
+            k.available !== false
+        )
+    );
+
+    renderCharacterSection(
+        container,
+        "🎭 Licensed Killers",
+        gameData.killers.filter(k =>
+            k.licensed &&
+            k.available !== false
+        )
+    );
+
+    renderCharacterSection(
+        container,
+        "🚫 Unavailable Killers",
+        gameData.killers.filter(k =>
+            k.available === false
+        )
+    );
 
 }
 
 // ==============================
-// Helper Functions
+// Main Section Heading
 // ==============================
 
-function getSurvivorNames(ids, showIcon = true) {
+function renderSectionHeading(container, title) {
 
-    return ids
-        .map(id => {
+    const heading = document.createElement("h2");
 
-            const survivor = gameData.survivors.find(s => s.id === id);
+    heading.className = "collection-main-heading";
 
-            if (!survivor) return null;
+    heading.textContent = title;
 
-            return showIcon
-                ? `👤 ${survivor.name}`
-                : survivor.name;
-
-        })
-        .filter(Boolean);
-
-}
-
-function getKillerNames(ids, showIcon = true) {
-
-    return ids
-        .map(id => {
-
-            const killer = gameData.killers.find(k => k.id === id);
-
-            if (!killer) return null;
-
-            return showIcon
-                ? `🔪 ${killer.name}`
-                : killer.name;
-
-        })
-        .filter(Boolean);
+    container.appendChild(heading);
 
 }
 
 // ==============================
-// Create Collection Section
+// Character Section
 // ==============================
 
-function createSection(title, list) {
-
-    const container = document.getElementById("collectionList");
+function renderCharacterSection(container, title, characters) {
 
     const section = document.createElement("div");
     section.className = "collection-section";
 
-    const ownedCount = list.filter(chapter => chapter.owned).length;
-    const totalCount = list.length;
+    const ownedCount = characters.filter(c => c.owned).length;
+    const totalCount = characters.length;
 
     section.innerHTML = `
 
@@ -130,30 +139,18 @@ function createSection(title, list) {
 
                     ${title}
 
-                    ${
-                        title !== "🎮 Base Game"
-                            ? `<span class="section-count">
-                                    (${ownedCount}/${totalCount})
-                               </span>`
-                            : ""
-                    }
+                    <span class="section-count">
+                        (${ownedCount}/${totalCount})
+                    </span>
 
                 </h3>
 
             </div>
 
-            ${
-                title !== "🎮 Base Game"
-
-                    ? `<input
-                            type="checkbox"
-                            class="section-checkbox"
-                       >`
-
-                    : `<span class="always-owned">
-                            ✔ Always Owned
-                       </span>`
-            }
+            <input
+                type="checkbox"
+                class="section-checkbox"
+            >
 
         </div>
 
@@ -161,94 +158,64 @@ function createSection(title, list) {
 
     `;
 
-    const grid =
-        section.querySelector(".collection-grid");
+    const grid = section.querySelector(".collection-grid");
 
-    const sectionCheckbox =
-        section.querySelector(".section-checkbox");
+   const sectionCheckbox =
+    section.querySelector(".section-checkbox");
 
-    if (sectionCheckbox) {
+sectionCheckbox.checked =
+    ownedCount === totalCount;
 
-        sectionCheckbox.checked =
-            ownedCount === totalCount;
+sectionCheckbox.indeterminate =
+    ownedCount > 0 &&
+    ownedCount < totalCount;
 
-        sectionCheckbox.indeterminate =
-            ownedCount > 0 &&
-            ownedCount < totalCount;
+// ==============================
+// Section Select All
+// ==============================
 
-    }
-   list.forEach(chapter => {
+sectionCheckbox.addEventListener("change", () => {
+
+    console.log("Section checkbox:", title, sectionCheckbox.checked);
+
+    characters.forEach(character => {
+
+        console.log(character.name);
+
+        character.owned = sectionCheckbox.checked;
+
+    });
+
+    saveCollection();
+
+    renderCollection();
+
+});
+
+characters.forEach(character => {
+
+    const card = createCharacterCard(character);
+
+    grid.appendChild(card);
+
+});
+
+container.appendChild(section);
+
+}
+
+// ==============================
+// Character Card
+// ==============================
+
+function createCharacterCard(character) {
 
     const card = document.createElement("div");
-    card.className = "chapter-card";
 
-    if (chapter.key === "base-game") {
-        card.classList.add("base-game");
-    }
+    card.className = "collection-card";
 
-    if (chapter.owned) {
+    if (character.owned) {
         card.classList.add("owned");
-    }
-
-    const showIcons = chapter.key !== "base-game";
-
-    const survivorNames = getSurvivorNames(
-        chapter.survivors,
-        showIcons
-    );
-
-    const killerNames = getKillerNames(
-        chapter.killers,
-        showIcons
-    );
-
-    let members = "";
-
-    // ==============================
-    // Base Game Layout
-    // ==============================
-
-    if (chapter.key === "base-game") {
-
-        members = `
-
-            <div class="base-game-columns">
-
-                <div class="base-column">
-
-                    <h4 class="base-heading">👤 Survivors</h4>
-
-                    <div class="base-list">
-                        ${survivorNames.join("<br>")}
-                    </div>
-
-                </div>
-
-                <div class="base-column">
-
-                    <h4 class="base-heading">🔪 Killers</h4>
-
-                    <div class="base-list">
-                        ${killerNames.join("<br>")}
-                    </div>
-
-                </div>
-
-            </div>
-
-        `;
-
-    }
-
-    else {
-
-        members = [
-
-            ...survivorNames,
-            ...killerNames
-
-        ].join("<br>");
-
     }
 
     card.innerHTML = `
@@ -256,98 +223,171 @@ function createSection(title, list) {
         <div class="chapter-header">
 
             <div class="chapter-name">
-
-                ${chapter.name}
-
+                ${character.name}
             </div>
 
-            ${
-                chapter.type === "base"
-
-                    ? `<span class="always-owned">
-                            ✔
-                       </span>`
-
-                    : `<input
-                            class="chapter-checkbox"
-                            type="checkbox"
-                            ${chapter.owned ? "checked" : ""}
-                       >`
-            }
-
-        </div>
-
-        <div class="chapter-members">
-
-            ${members}
+            <input
+                class="chapter-checkbox"
+                type="checkbox"
+                ${character.owned ? "checked" : ""}
+            >
 
         </div>
 
     `;
 
-    // Base Game doesn't need checkbox events
-    if (chapter.type === "base") {
-
-        grid.appendChild(card);
-
-        return;
-
-    }
-
     const checkbox =
         card.querySelector(".chapter-checkbox");
 
+    // ==============================
+    // Click anywhere on the card
+    // ==============================
+
     card.addEventListener("click", (e) => {
 
-        if (e.target !== checkbox) {
-            checkbox.checked = !checkbox.checked;
-        }
+    if (e.target !== checkbox) {
+        checkbox.checked = !checkbox.checked;
+    }
 
-        chapter.owned = checkbox.checked;
+    character.owned = checkbox.checked;
 
-        saveCollection();
+    card.classList.toggle(
+        "owned",
+        character.owned
+    );
 
-        renderCollection();
+    saveCollection();
 
-    });
-
-    checkbox.addEventListener("click", (e) => {
-
-        e.stopPropagation();
-
-        chapter.owned = checkbox.checked;
-
-        saveCollection();
-
-        renderCollection();
-
-    });
-
-    grid.appendChild(card);
+    renderCollection();
 
 });
 
-       // ==============================
-    // Section Select All
+    // ==============================
+    // Click directly on checkbox
     // ==============================
 
-    if (sectionCheckbox) {
+    checkbox.addEventListener("click", (e) => {
 
-        sectionCheckbox.addEventListener("change", () => {
+    e.stopPropagation();
 
-            list.forEach(chapter => {
+    character.owned = checkbox.checked;
 
-                chapter.owned = sectionCheckbox.checked;
+    card.classList.toggle(
+        "owned",
+        character.owned
+    );
 
-            });
+    saveCollection();
 
-            saveCollection();
+    renderCollection();
 
-            renderCollection();
+});
 
-        });
+    return card;
 
-    }
+}
+
+sectionCheckbox.addEventListener("change", () => {
+
+    console.log("Section checkbox:", title, sectionCheckbox.checked);
+
+    characters.forEach(character => {
+
+        console.log(character.name);
+
+        character.owned = sectionCheckbox.checked;
+
+    });
+
+    saveCollection();
+
+    renderCollection();
+
+});
+
+// ==============================
+// Base Game
+// ==============================
+
+function renderBaseGame(container) {
+
+    const baseSurvivors = gameData.survivors.filter(
+        survivor => survivor.chapter === "Base Game"
+    );
+
+    const baseKillers = gameData.killers.filter(
+        killer => killer.chapter === "Base Game"
+    );
+
+    const section = document.createElement("div");
+    section.className = "collection-section";
+
+    section.innerHTML = `
+
+        <div class="collection-section-header">
+
+            <h3>🎮 Base Game</h3>
+
+            <span class="always-owned">
+                ✔ Always Owned
+            </span>
+
+        </div>
+
+        <div class="collection-grid"></div>
+
+    `;
+
+    const grid = section.querySelector(".collection-grid");
+
+    const card = document.createElement("div");
+    card.className = "chapter-card base-game owned";
+
+    card.innerHTML = `
+
+        <div class="chapter-header">
+
+            <div class="chapter-name">
+                Base Game
+            </div>
+
+        </div>
+
+        <div class="base-game-columns">
+
+            <div class="base-column">
+
+                <h4 class="base-heading">👤 Survivors</h4>
+
+                <div class="base-list">
+
+                    ${baseSurvivors
+                        .map(s => s.name)
+                        .join("<br>")}
+
+                </div>
+
+            </div>
+
+            <div class="base-column">
+
+                <h4 class="base-heading">🔪 Killers</h4>
+
+                <div class="base-list">
+
+                    ${baseKillers
+                        .map(k => k.name)
+                        .join("<br>")}
+
+                </div>
+
+            </div>
+
+        </div>
+
+    `;
+
+    grid.appendChild(card);
 
     container.appendChild(section);
 
@@ -359,54 +399,72 @@ function createSection(title, list) {
 
 function saveCollection() {
 
+    const collection = {
+
+        survivors: gameData.survivors.map(survivor => ({
+            id: survivor.id,
+            owned: survivor.owned
+        })),
+
+        killers: gameData.killers.map(killer => ({
+            id: killer.id,
+            owned: killer.owned
+        }))
+
+    };
+
     localStorage.setItem(
         "dbdCollection",
-        JSON.stringify(chapters)
+        JSON.stringify(collection)
     );
 
 }
 
-function loadCollectionSave() {
+// ==============================
+// Load Collection
+// ==============================
+
+function loadCollection() {
 
     const saved = localStorage.getItem("dbdCollection");
 
     if (!saved) return;
 
-    const ownedData = JSON.parse(saved);
+    const collection = JSON.parse(saved);
 
-    chapters.forEach(chapter => {
+    // Old chapter save detected
+    if (!collection.survivors || !collection.killers) {
 
-        const savedChapter = ownedData.find(c => c.id === chapter.id);
+        console.log("Old collection save detected. Resetting...");
 
-        if (savedChapter) {
-            chapter.owned = savedChapter.owned;
+        localStorage.removeItem("dbdCollection");
+
+        return;
+
+    }
+
+    collection.survivors.forEach(savedSurvivor => {
+
+        const survivor = gameData.survivors.find(
+            s => s.id === savedSurvivor.id
+        );
+
+        if (survivor) {
+            survivor.owned = savedSurvivor.owned;
         }
 
     });
 
-}
+    collection.killers.forEach(savedKiller => {
 
-// ==============================
-// Collection Helpers
-// ==============================
+        const killer = gameData.killers.find(
+            k => k.id === savedKiller.id
+        );
 
-function isChapterOwned(character) {
+        if (killer) {
+            killer.owned = savedKiller.owned;
+        }
 
-    const chapter = chapters.find(c =>
-        c.survivors.includes(character.id) ||
-        c.killers.includes(character.id)
-    );
-
-    return chapter ? chapter.owned : true;
-
-}
-
-// ==============================
-// Initialize Collection
-// ==============================
-
-async function initializeCollection() {
-
-    await loadChapters();
+    });
 
 }

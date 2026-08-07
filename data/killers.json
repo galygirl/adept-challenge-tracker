@@ -45,6 +45,7 @@
     "image": "K06_TheShape_Portrait.png",
     "chapter": "Halloween",
     "licensed": true,
+    "available": false,
     "owned": false
   },
   {
@@ -197,6 +198,7 @@
     "image": "K25_TheCenobite_Portrait.png",
     "chapter": "Hellraiser",
     "licensed": true,
+    "available": false,
     "owned": false
   },
   {

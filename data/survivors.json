@@ -45,6 +45,7 @@
     "image": "laurie.png",
     "chapter": "Halloween",
     "licensed": true,
+    "available": false,
     "owned": false
   },
   {
@@ -60,7 +61,7 @@
   "name": "William \"Bill\" Overbeck",
   "image": "bill.png",
   "chapter": "Base Game",
-  "licensed": true,
+  "licensed": false,
   "owned": true
   },
   {

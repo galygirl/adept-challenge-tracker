@@ -350,7 +350,7 @@ const survivors = gameData.survivors.filter(survivor => {
         return false;
     }
 
-    return isChapterOwned(survivor);
+    return survivor.owned;
 
 });
 

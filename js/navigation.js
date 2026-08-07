@@ -78,8 +78,17 @@ function updateHeader(viewName) {
 
     const page = pageData[viewName];
 
-    document.getElementById("pageTitle").textContent = page.title;
+    if (!page) return;
 
-    document.getElementById("pageSubtitle").textContent = page.subtitle;
+    const pageTitle = document.getElementById("pageTitle");
+    const pageSubtitle = document.getElementById("pageSubtitle");
+
+    if (pageTitle) {
+        pageTitle.textContent = page.title;
+    }
+
+    if (pageSubtitle) {
+        pageSubtitle.textContent = page.subtitle;
+    }
 
 }

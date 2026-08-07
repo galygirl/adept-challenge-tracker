@@ -513,7 +513,7 @@
 
     border-color: #6d5ef7;
 
-    box-shadow: 0 0 15px rgba(109, 94, 247, .35);
+    box-shadow: 0 4px 18px rgba(70, 209, 96, 0.22);
 
 }
 
@@ -650,7 +650,7 @@
 
 .random-btn:hover {
 
-    transform: translateY(-2px);
+    transform: translateY(-3px) scale(1.01);
 
     box-shadow:
         0 12px 26px rgba(111,99,246,.35);
@@ -993,45 +993,50 @@
 
     grid-template-columns:repeat(auto-fill,minmax(280px,1fr));
 
-    gap:18px;
+    gap:14px;
 
 }
 
-.chapter-card{
+.collection-card {
 
-    background:var(--panel-bg);
+    background: #2b2b44;
 
-    border:2px solid transparent;
+    border: 2px solid #4a4a6b;
 
-    border-radius:14px;
+    border-radius: 14px;
 
-    padding:18px;
+    padding: 16px;
 
-    min-height:140px;
+    cursor: pointer;
 
-    cursor:pointer;
-
-    transition:all .2s ease;
-
-    display:flex;
-
-    flex-direction:column;
+    transition:
+        border-color .20s ease,
+        box-shadow .20s ease,
+        transform .20s ease;
 
 }
 
-.chapter-card:hover{
+.collection-card:hover {
 
-    transform:translateY(-3px);
+    transform: translateY(-2px);
 
-    border-color:var(--accent-color);
+    border-color: #69e97f;
 
-    box-shadow:0 6px 18px rgba(0,0,0,.25);
+    box-shadow: 0 0 14px rgba(70, 209, 96, 0.25);
 
 }
 
-.chapter-card.owned{
+.collection-card.owned {
 
-    border-color:#46d160;
+    border-color: #46d160;
+
+    box-shadow: 0 0 10px rgba(70, 209, 96, 0.18);
+
+}
+
+.collection-card.owned:hover {
+
+    box-shadow: 0 0 18px rgba(70, 209, 96, 0.35);
 
 }
 
@@ -1041,9 +1046,9 @@
 
     justify-content:space-between;
 
-    align-items:flex-start;
+    align-items:center;
 
-    margin-bottom:8px;
+    margin-bottom:0;
 
 }
 
@@ -1137,7 +1142,7 @@
 
 }
 
-.chapter-card.base-game{
+.collection-card.base-game{
 
     grid-column: span 2;
 
@@ -1147,15 +1152,15 @@
    Collection Section Header
 ========================================== */
 
-.collection-section-header{
+.collection-section-header {
 
-    display:flex;
+    display: flex;
 
-    justify-content:space-between;
+    align-items: center;
 
-    align-items:center;
+    gap: 12px;
 
-    margin-bottom:18px;
+    margin-bottom: 18px;
 
 }
 

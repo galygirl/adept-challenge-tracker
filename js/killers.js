@@ -97,7 +97,7 @@ const killers = gameData.killers.filter(killer => {
         return false;
     }
 
-    return isChapterOwned(killer);
+    return killer.owned;
 
 });
 
