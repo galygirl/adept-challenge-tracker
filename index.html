@@ -103,6 +103,27 @@
     <p class="page-description">
         Track your overall Adept Challenge progress.
     </p>
+    <!-- Getting Started -->
+<div class="card getting-started-card">
+
+    <h3>📚 Getting Started</h3>
+
+    <p>
+    Before starting your Adept Challenge, go to
+    <a href="#" 
+       onclick="document.querySelector('[data-page=\'collectionPage\']').click(); return false;"
+       class="collection-link">
+        Collection
+    </a>
+    and select the Survivors and Killers you currently own.
+</p>
+
+    <p>
+        🎲 The randomizer will only choose characters
+        you've selected as owned.
+    </p>
+
+</div>
 
     <!-- Survivor / Killer Totals -->
     <div class="dashboard-grid">
@@ -244,10 +265,33 @@
         placeholder="Search survivors...">
 
     <button id="randomSurvivorBtn">
+    🎲 Random Survivor
+</button>
 
-        🎲 Random Survivor
+<div class="result-buttons">
 
+    <button
+        class="result-btn adept"
+        onclick="selectResult('Adept')"
+    >
+        🟢 Adept
     </button>
+
+    <button
+        class="result-btn escape"
+        onclick="selectResult('Escaped')"
+    >
+        🔵 Escape
+    </button>
+
+    <button
+        class="result-btn failed"
+        onclick="selectResult('Failed')"
+    >
+        🔴 Failed
+    </button>
+
+</div>
 
 </div>
 
@@ -258,7 +302,9 @@
 
         <!-- Killers -->
 
-        <section id="killers" class="page">
+        <!-- Killers -->
+
+<section id="killers" class="page">
 
     <h1>Killers</h1>
 
@@ -274,13 +320,35 @@
             placeholder="Search killers...">
 
         <button id="randomKillerBtn" class="random-btn">
-    🎲 <span>Random Killer</span>
-    </button>
+            🎲 <span>Random Killer</span>
+        </button>
+
+        <div class="result-buttons">
+
+            <button
+                class="result-btn adept"
+                onclick="selectKillerResult('Adept')"
+            >
+                🟢 Adept
+            </button>
+
+            <button
+                class="result-btn failed"
+                onclick="selectKillerResult('Failed')"
+            >
+                🔴 Failed
+            </button>
+
+        </div>
 
     </div>
 
-    <div id="killerGrid"
-         class="portrait-grid"></div>
+    <div
+        id="killerGrid"
+        class="portrait-grid">
+    </div>
+
+</section>
 
 </section>
     

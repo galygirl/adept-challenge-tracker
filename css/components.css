@@ -352,12 +352,13 @@
 
 .portrait-card img {
 
-    width: 100%;
+    width: 75%;
+
+    margin: 0 auto;
 
     display: block;
 
     border-radius: 10px;
-
 }
 
 .portrait-name {
@@ -1201,4 +1202,119 @@
 
     cursor: pointer;
 
+}
+
+.result-buttons {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    margin-left: auto;
+}
+
+/* ==========================================
+   Survivor Result Buttons
+   ========================================== */
+
+.result-buttons {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+}
+
+.result-btn {
+    border: none;
+    border-radius: 8px;
+    padding: 10px 14px;
+    font-size: 14px;
+    font-weight: 600;
+    cursor: pointer;
+    color: white;
+    transition: var(--transition);
+}
+
+.result-btn:hover {
+    transform: translateY(-1px);
+}
+
+/* Adept */
+.result-btn.adept {
+    background: #22c55e;
+}
+
+/* Escape */
+.result-btn.escape {
+    background: #3b82f6;
+}
+
+/* Failed */
+.result-btn.failed {
+    background: #ef4444;
+}
+
+/* ==========================================
+   Getting Started Card
+   ========================================== */
+
+.getting-started-card {
+    margin-bottom: 20px;
+}
+
+.getting-started-card h3 {
+    margin-bottom: 10px;
+}
+
+.getting-started-card p {
+    margin: 6px 0;
+    font-size: 16px;
+}
+
+.collection-link {
+    color: #b58cff;
+    font-weight: 700;
+    text-decoration: none;
+    transition: all 0.2s ease;
+}
+
+.collection-link:hover {
+    color: #d2b8ff;
+    text-decoration: underline;
+}
+
+.collection-link {
+    color: #b58cff;
+    font-weight: 700;
+    text-decoration: none;
+    cursor: pointer;
+    transition: color 0.2s ease;
+}
+
+.collection-link:hover {
+    color: #d2b8ff;
+    text-decoration: underline;
+}
+
+.base-game-card {
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.base-game-card .base-game-columns {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 40px;
+}
+
+/* ==========================================
+   Base Game Full-Width Card
+   ========================================== */
+
+.chapter-card.base-game {
+    grid-column: 1 / -1;
+    width: 100%;
+    box-sizing: border-box;
+    padding: 20px;
+    border: 2px solid rgba(157, 124, 255, 0.5);
+    border-radius: 16px;
+    background: rgba(157, 124, 255, 0.05);
+    box-shadow: 0 0 20px rgba(157, 124, 255, 0.12);
 }

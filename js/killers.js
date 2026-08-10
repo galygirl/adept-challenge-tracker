@@ -79,12 +79,20 @@ const killers = gameData.killers.filter(killer => {
 
     const saved = progress.killers[killer.id];
 
+    // Exclude completed Adepts
     if (saved && saved.status === "adept") {
         return false;
     }
 
-    return killer.owned;
+    // Don't immediately pick the current Killer again
+    if (
+        currentKillerChallenge !== null &&
+        killer.id === currentKillerChallenge
+    ) {
+        return false;
+    }
 
+    return killer.owned;
 });
 
     // Everything completed
@@ -154,27 +162,8 @@ function killerClicked(killer) {
 
     selectedKiller = killer;
 
-    // First click
-    if (currentKillerChallenge !== killer.id) {
-
-        setCurrentKillerChallenge(killer);
-
-        return;
-
-    }
-
-      // Second click
-    document.getElementById("menuTitle").textContent =
-        killer.name;
-
-    currentMenuType = "killer";
-
-    // Hide Escape button for killers
-    document.querySelector(".menu-btn.escape").style.display = "none";
-
-    document
-        .getElementById("portraitMenu")
-        .classList.remove("hidden");
+    // Select this killer as the current challenge
+    setCurrentKillerChallenge(killer);
 
 }
 
@@ -247,6 +236,8 @@ function applyKillerStatus(killerId, status) {
 
 function setCurrentKillerChallenge(killer) {
 
+    selectedKiller = killer;
+
     // Remove previous gold border
     if (currentKillerChallenge !== null) {
 
@@ -278,7 +269,6 @@ function setCurrentKillerChallenge(killer) {
 
     document.getElementById("currentResult").textContent =
         "In Progress";
-
 }
 
 function renderKillers(killers) {

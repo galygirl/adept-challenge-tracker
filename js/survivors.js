@@ -127,26 +127,8 @@ function portraitClicked(survivor) {
 
     selectedSurvivor = survivor;
 
-    // First click → Select Challenge
-    if (currentChallenge !== survivor.id) {
-
-        setCurrentChallenge(survivor);
-
-        return;
-
-    }
-
-    // Second click → Show Result Menu
-    document.getElementById("menuTitle").textContent =
-    survivor.name;
-
-currentMenuType = "survivor";
-
-   document.querySelector(".menu-btn.escape").style.display = "block";
-
-   document
-    .getElementById("portraitMenu")
-    .classList.remove("hidden");
+    // Select this survivor as the current challenge
+    setCurrentChallenge(survivor);
 
 }
 

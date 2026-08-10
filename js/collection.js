@@ -124,7 +124,7 @@ function renderSectionHeading(container, title) {
 function renderCharacterSection(container, title, characters) {
 
     const section = document.createElement("div");
-    section.className = "collection-section";
+    section.className = "collection-section base-game-section";
 
     const ownedCount = characters.filter(c => c.owned).length;
     const totalCount = characters.length;
@@ -320,7 +320,7 @@ function renderBaseGame(container) {
     );
 
     const section = document.createElement("div");
-    section.className = "collection-section";
+    section.className = "collection-section base-game-section";
 
     section.innerHTML = `
 
@@ -341,8 +341,8 @@ function renderBaseGame(container) {
     const grid = section.querySelector(".collection-grid");
 
     const card = document.createElement("div");
-    card.className = "chapter-card base-game owned";
-
+  card.className = "chapter-card base-game base-game-card owned";
+    
     card.innerHTML = `
 
         <div class="chapter-header">
