@@ -39,25 +39,14 @@ function renderCollection() {
 
     renderSectionHeading(container, "👤 Survivors");
 
-    renderCharacterSection(
-        container,
-         "🌿 Original Survivors",
-        gameData.survivors.filter(s =>
-            !s.licensed &&
-            s.chapter !== "Base Game" &&
-            s.available !== false
-        )
-    );
-
-    renderCharacterSection(
-        container,
-        "🎭 Licensed Survivors",
-        gameData.survivors.filter(s =>
-            s.licensed &&
-            s.available !== false
-        )
-    );
-
+renderCharacterSection(
+    container,
+    "Survivors",
+    gameData.survivors.filter(s =>
+        s.chapter !== "Base Game" &&
+        s.available !== false
+    )
+);
     renderCharacterSection(
         container,
         "🚫 Unavailable Survivors",
@@ -72,24 +61,14 @@ function renderCollection() {
 
     renderSectionHeading(container, "🔪 Killers");
 
-    renderCharacterSection(
-        container,
-        "🌿 Original Killers",
-        gameData.killers.filter(k =>
-            !k.licensed &&
-            k.chapter !== "Base Game" &&
-            k.available !== false
-        )
-    );
-
-    renderCharacterSection(
-        container,
-        "🎭 Licensed Killers",
-        gameData.killers.filter(k =>
-            k.licensed &&
-            k.available !== false
-        )
-    );
+renderCharacterSection(
+    container,
+    "Killers",
+    gameData.killers.filter(k =>
+        k.chapter !== "Base Game" &&
+        k.available !== false
+    )
+);
 
     renderCharacterSection(
         container,
