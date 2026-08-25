@@ -344,5 +344,13 @@
     "chapter": "The Slasher",
     "licensed": true,
     "owned": false
+  },
+  {
+    "id": 44,
+    "name": "The Judgement",
+    "image": "K44_TheJudgement_Portrait.png",
+    "chapter": "Chorus of Sin",
+    "licensed": true,
+    "owned": false
   }
 ]

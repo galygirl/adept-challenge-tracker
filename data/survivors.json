@@ -420,7 +420,15 @@
     "id": 53,
     "name": "Shane Wiigwaas",
     "image": "shane.png",
-    "chapter": "The Boulet Brothers",
+    "chapter": "The Life Road",
+    "licensed": true,
+    "owned": false
+  },
+  {
+    "id": 54,
+    "name": "Aurora Stardotter",
+    "image": "aurora.png",
+    "chapter": "Chorus of Sin",
     "licensed": true,
     "owned": false
   }

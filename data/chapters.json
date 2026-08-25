@@ -421,5 +421,14 @@
     "owned": false,
     "survivors": [],
     "killers": [43]
+  },
+  {
+    "id": 48,
+    "key": "Chorus of Sin",
+    "name": "Chorus of Sin",
+    "type": "original",
+    "owned": false,
+    "survivors": [54],
+    "killers": [44]
   }
 ]
