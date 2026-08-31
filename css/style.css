@@ -144,3 +144,27 @@ ul {
 
 }
 
+/* ==========================================
+   Revealed Perk Name
+   ========================================== */
+
+.perk-result {
+    display: none;
+    padding: 20px;
+
+    font-size: 20px;
+    font-weight: 700;
+
+    text-align: center;
+
+    color: #6f42c1;
+}
+
+.perk-card.revealed .perk-question {
+    display: none;
+}
+
+.perk-card.revealed .perk-result {
+    display: block;
+    color: #6f42c1;
+}

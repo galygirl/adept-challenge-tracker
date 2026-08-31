@@ -18,6 +18,11 @@ const pageData = {
         subtitle: "View and update Killer Adept challenges."
     },
 
+    perkRandomizer: {
+        title: "Perk Randomizer",
+        subtitle: "Randomize a Survivor or Killer perk loadout."
+    },
+
     collectionPage: {
         title: "Collection",
         subtitle: "Manage which chapters you own."
@@ -33,7 +38,6 @@ const pageData = {
         subtitle: "Customize your tracker experience."
     }
 };
-
 // ==========================================
 // Initialize Navigation
 // ==========================================

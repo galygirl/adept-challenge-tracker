@@ -1,0 +1,1568 @@
+{
+  "survivor": [
+    {
+      "id": "bond",
+      "name": "Bond",
+      "owner": "Dwight Fairfield"
+    },
+    {
+      "id": "prove_thyself",
+      "name": "Prove Thyself",
+      "owner": "Dwight Fairfield"
+    },
+    {
+      "id": "leader",
+      "name": "Leader",
+      "owner": "Dwight Fairfield"
+    },
+    {
+      "id": "adrenaline",
+      "name": "Adrenaline",
+      "owner": "Meg Thomas"
+    },
+    {
+      "id": "sprint_burst",
+      "name": "Sprint Burst",
+      "owner": "Meg Thomas"
+    },
+    {
+      "id": "quick_and_quiet",
+      "name": "Quick & Quiet",
+      "owner": "Meg Thomas"
+    },
+    {
+      "id": "botany_knowledge",
+      "name": "Botany Knowledge",
+      "owner": "Claudette Morel"
+    },
+    {
+      "id": "empathy",
+      "name": "Empathy",
+      "owner": "Claudette Morel"
+    },
+    {
+      "id": "self_care",
+      "name": "Self-Care",
+      "owner": "Claudette Morel"
+    },
+    {
+      "id": "calm_spirit",
+      "name": "Calm Spirit",
+      "owner": "Jake Park"
+    },
+    {
+      "id": "iron_will",
+      "name": "Iron Will",
+      "owner": "Jake Park"
+    },
+    {
+      "id": "saboteur",
+      "name": "Saboteur",
+      "owner": "Jake Park"
+    },
+    {
+      "id": "balanced_landing",
+      "name": "Balanced Landing",
+      "owner": "Nea Karlsson"
+    },
+    {
+      "id": "urban_evasion",
+      "name": "Urban Evasion",
+      "owner": "Nea Karlsson"
+    },
+    {
+      "id": "streetwise",
+      "name": "Streetwise",
+      "owner": "Nea Karlsson"
+    },
+    {
+      "id": "borrowed_time",
+      "name": "Borrowed Time",
+      "owner": "William \"Bill\" Overbeck"
+    },
+    {
+      "id": "left_behind",
+      "name": "Left Behind",
+      "owner": "William \"Bill\" Overbeck"
+    },
+    {
+      "id": "unbreakable",
+      "name": "Unbreakable",
+      "owner": "William \"Bill\" Overbeck"
+    },
+    {
+      "id": "alert",
+      "name": "Alert",
+      "owner": "Feng Min"
+    },
+    {
+      "id": "lithe",
+      "name": "Lithe",
+      "owner": "Feng Min"
+    },
+    {
+      "id": "technician",
+      "name": "Technician",
+      "owner": "Feng Min"
+    },
+    {
+      "id": "dead_hard",
+      "name": "Dead Hard",
+      "owner": "David King"
+    },
+    {
+      "id": "no_mither",
+      "name": "No Mither",
+      "owner": "David King"
+    },
+    {
+      "id": "we_re_gonna_live_forever",
+      "name": "We're Gonna Live Forever",
+      "owner": "David King"
+    },
+    {
+      "id": "pharmacy",
+      "name": "Pharmacy",
+      "owner": "Quentin Smith"
+    },
+    {
+      "id": "vigil",
+      "name": "Vigil",
+      "owner": "Quentin Smith"
+    },
+    {
+      "id": "wake_up",
+      "name": "Wake Up!",
+      "owner": "Quentin Smith"
+    },
+    {
+      "id": "ace_in_the_hole",
+      "name": "Ace in the Hole",
+      "owner": "Ace Visconti"
+    },
+    {
+      "id": "open_handed",
+      "name": "Open-Handed",
+      "owner": "Ace Visconti"
+    },
+    {
+      "id": "up_the_ante",
+      "name": "Up the Ante",
+      "owner": "Ace Visconti"
+    },
+    {
+      "id": "boil_over",
+      "name": "Boil Over",
+      "owner": "Kate Denson"
+    },
+    {
+      "id": "dance_with_me",
+      "name": "Dance With Me",
+      "owner": "Kate Denson"
+    },
+    {
+      "id": "windows_of_opportunity",
+      "name": "Windows of Opportunity",
+      "owner": "Kate Denson"
+    },
+    {
+      "id": "aftercare",
+      "name": "Aftercare",
+      "owner": "Jeff Johansen"
+    },
+    {
+      "id": "breakdown",
+      "name": "Breakdown",
+      "owner": "Jeff Johansen"
+    },
+    {
+      "id": "distortion",
+      "name": "Distortion",
+      "owner": "Jeff Johansen"
+    },
+    {
+      "id": "head_on",
+      "name": "Head On",
+      "owner": "Jane Romero"
+    },
+    {
+      "id": "poised",
+      "name": "Poised",
+      "owner": "Jane Romero"
+    },
+    {
+      "id": "solidarity",
+      "name": "Solidarity",
+      "owner": "Jane Romero"
+    },
+    {
+      "id": "autodidact",
+      "name": "Autodidact",
+      "owner": "Adam Francis"
+    },
+    {
+      "id": "deliverance",
+      "name": "Deliverance",
+      "owner": "Adam Francis"
+    },
+    {
+      "id": "diversion",
+      "name": "Diversion",
+      "owner": "Adam Francis"
+    },
+    {
+      "id": "buckle_up",
+      "name": "Buckle Up",
+      "owner": "Ash Williams"
+    },
+    {
+      "id": "flip_flop",
+      "name": "Flip-Flop",
+      "owner": "Ash Williams"
+    },
+    {
+      "id": "mettle_of_man",
+      "name": "Mettle of Man",
+      "owner": "Ash Williams"
+    },
+    {
+      "id": "babysitter",
+      "name": "Babysitter",
+      "owner": "Steve Harrington"
+    },
+    {
+      "id": "camaraderie",
+      "name": "Camaraderie",
+      "owner": "Steve Harrington"
+    },
+    {
+      "id": "second_wind",
+      "name": "Second Wind",
+      "owner": "Steve Harrington"
+    },
+    {
+      "id": "better_together",
+      "name": "Better Together",
+      "owner": "Nancy Wheeler"
+    },
+    {
+      "id": "inner_strength",
+      "name": "Inner Strength",
+      "owner": "Nancy Wheeler"
+    },
+    {
+      "id": "fixated",
+      "name": "Fixated",
+      "owner": "Nancy Wheeler"
+    },
+    {
+      "id": "any_means_necessary",
+      "name": "Any Means Necessary",
+      "owner": "Yui Kimura"
+    },
+    {
+      "id": "breakout",
+      "name": "Breakout",
+      "owner": "Yui Kimura"
+    },
+    {
+      "id": "lucky_break",
+      "name": "Lucky Break",
+      "owner": "Yui Kimura"
+    },
+    {
+      "id": "for_the_people",
+      "name": "For the People",
+      "owner": "Zarina Kassir"
+    },
+    {
+      "id": "off_the_record",
+      "name": "Off the Record",
+      "owner": "Zarina Kassir"
+    },
+    {
+      "id": "red_herring",
+      "name": "Red Herring",
+      "owner": "Zarina Kassir"
+    },
+    {
+      "id": "blood_pact",
+      "name": "Blood Pact",
+      "owner": "Cheryl Mason"
+    },
+    {
+      "id": "repressed_alliance",
+      "name": "Repressed Alliance",
+      "owner": "Cheryl Mason"
+    },
+    {
+      "id": "soul_guard",
+      "name": "Soul Guard",
+      "owner": "Cheryl Mason"
+    },
+    {
+      "id": "visionary",
+      "name": "Visionary",
+      "owner": "Felix Richter"
+    },
+    {
+      "id": "built_to_last",
+      "name": "Built to Last",
+      "owner": "Felix Richter"
+    },
+    {
+      "id": "desperate_measures",
+      "name": "Desperate Measures",
+      "owner": "Felix Richter"
+    },
+    {
+      "id": "appraisal",
+      "name": "Appraisal",
+      "owner": "Élodie Rakoto"
+    },
+    {
+      "id": "deception",
+      "name": "Deception",
+      "owner": "Élodie Rakoto"
+    },
+    {
+      "id": "power_struggle",
+      "name": "Power Struggle",
+      "owner": "Élodie Rakoto"
+    },
+    {
+      "id": "boon_dark_theory",
+      "name": "Boon: Dark Theory",
+      "owner": "Yoichi Asakawa"
+    },
+    {
+      "id": "empathic_connection",
+      "name": "Empathic Connection",
+      "owner": "Yoichi Asakawa"
+    },
+    {
+      "id": "parental_guidance",
+      "name": "Parental Guidance",
+      "owner": "Yoichi Asakawa"
+    },
+    {
+      "id": "boon_exponential",
+      "name": "Boon: Exponential",
+      "owner": "Jonah Vasquez"
+    },
+    {
+      "id": "corrective_action",
+      "name": "Corrective Action",
+      "owner": "Jonah Vasquez"
+    },
+    {
+      "id": "overcome",
+      "name": "Overcome",
+      "owner": "Jonah Vasquez"
+    },
+    {
+      "id": "inner_focus",
+      "name": "Inner Focus",
+      "owner": "Haddie Kaur"
+    },
+    {
+      "id": "overzealous",
+      "name": "Overzealous",
+      "owner": "Haddie Kaur"
+    },
+    {
+      "id": "residual_manifest",
+      "name": "Residual Manifest",
+      "owner": "Haddie Kaur"
+    },
+    {
+      "id": "fogwise",
+      "name": "Fogwise",
+      "owner": "Vittorio Toscano"
+    },
+    {
+      "id": "quick_gambit",
+      "name": "Quick Gambit",
+      "owner": "Vittorio Toscano"
+    },
+    {
+      "id": "potential_energy",
+      "name": "Potential Energy",
+      "owner": "Vittorio Toscano"
+    },
+    {
+      "id": "plot_twist",
+      "name": "Plot Twist",
+      "owner": "Nicolas Cage"
+    },
+    {
+      "id": "dramaturgy",
+      "name": "Dramaturgy",
+      "owner": "Nicolas Cage"
+    },
+    {
+      "id": "scene_partner",
+      "name": "Scene Partner",
+      "owner": "Nicolas Cage"
+    },
+    {
+      "id": "champion_of_light",
+      "name": "Champion of Light",
+      "owner": "Alan Wake"
+    },
+    {
+      "id": "boon_illumination",
+      "name": "Boon: Illumination",
+      "owner": "Alan Wake"
+    },
+    {
+      "id": "deadline",
+      "name": "Deadline",
+      "owner": "Alan Wake"
+    },
+    {
+      "id": "boon_circle_of_healing",
+      "name": "Boon: Circle of Healing",
+      "owner": "Mikaela Reid"
+    },
+    {
+      "id": "boon_shadow_step",
+      "name": "Boon: Shadow Step",
+      "owner": "Mikaela Reid"
+    },
+    {
+      "id": "clairvoyance",
+      "name": "Clairvoyance",
+      "owner": "Mikaela Reid"
+    },
+    {
+      "id": "decisive_strike",
+      "name": "Decisive Strike",
+      "owner": "Laurie Strode"
+    },
+    {
+      "id": "object_of_obsession",
+      "name": "Object of Obsession",
+      "owner": "Laurie Strode"
+    },
+    {
+      "id": "sole_survivor",
+      "name": "Sole Survivor",
+      "owner": "Laurie Strode"
+    },
+    {
+      "id": "tenacity",
+      "name": "Tenacity",
+      "owner": "Detective Tapp"
+    },
+    {
+      "id": "detectives_hunch",
+      "name": "Detective's Hunch",
+      "owner": "Detective Tapp"
+    },
+    {
+      "id": "stake_out",
+      "name": "Stake Out",
+      "owner": "Detective Tapp"
+    },
+    {
+      "id": "better_than_new",
+      "name": "Better than New",
+      "owner": "Rebecca Chambers"
+    },
+    {
+      "id": "reassurance",
+      "name": "Reassurance",
+      "owner": "Rebecca Chambers"
+    },
+    {
+      "id": "hyperfocus",
+      "name": "Hyperfocus",
+      "owner": "Rebecca Chambers"
+    },
+    {
+      "id": "bite_the_bullet",
+      "name": "Bite the Bullet",
+      "owner": "Leon S. Kennedy"
+    },
+    {
+      "id": "flashbang",
+      "name": "Flashbang",
+      "owner": "Leon S. Kennedy"
+    },
+    {
+      "id": "rookie_spirit",
+      "name": "Rookie Spirit",
+      "owner": "Leon S. Kennedy"
+    },
+    {
+      "id": "blast_mine",
+      "name": "Blast Mine",
+      "owner": "Jill Valentine"
+    },
+    {
+      "id": "counterforce",
+      "name": "Counterforce",
+      "owner": "Jill Valentine"
+    },
+    {
+      "id": "resurgence",
+      "name": "Resurgence",
+      "owner": "Jill Valentine"
+    },
+    {
+      "id": "cut_loose",
+      "name": "Cut Loose",
+      "owner": "Thalita Lyra"
+    },
+    {
+      "id": "teamwork_power_of_two",
+      "name": "Teamwork: Power of Two",
+      "owner": "Thalita Lyra"
+    },
+    {
+      "id": "friendly_competition",
+      "name": "Friendly Competition",
+      "owner": "Thalita Lyra"
+    },
+    {
+      "id": "background_player",
+      "name": "Background Player",
+      "owner": "Renato Lyra"
+    },
+    {
+      "id": "blood_rush",
+      "name": "Blood Rush",
+      "owner": "Renato Lyra"
+    },
+    {
+      "id": "teamwork_collective_stealth",
+      "name": "Teamwork: Collective Stealth",
+      "owner": "Renato Lyra"
+    },
+    {
+      "id": "chemical_trap",
+      "name": "Chemical Trap",
+      "owner": "Ellen Ripley"
+    },
+    {
+      "id": "light_footed",
+      "name": "Light-Footed",
+      "owner": "Ellen Ripley"
+    },
+    {
+      "id": "lucky_star",
+      "name": "Lucky Star",
+      "owner": "Ellen Ripley"
+    },
+    {
+      "id": "apocalyptic_ingenuity",
+      "name": "Apocalyptic Ingenuity",
+      "owner": "Rick Grimes"
+    },
+    {
+      "id": "come_and_get_me",
+      "name": "Come and Get Me!",
+      "owner": "Rick Grimes"
+    },
+    {
+      "id": "teamwork_toughen_up",
+      "name": "Teamwork: Toughen Up",
+      "owner": "Rick Grimes"
+    },
+    {
+      "id": "a_place_for_us",
+      "name": "A Place For Us",
+      "owner": "Kwon Tae-young"
+    },
+    {
+      "id": "flow_state",
+      "name": "Flow State",
+      "owner": "Kwon Tae-young"
+    },
+    {
+      "id": "five_moves_ahead",
+      "name": "Five Moves Ahead",
+      "owner": "Kwon Tae-young"
+    },
+    {
+      "id": "bada_bada_boom",
+      "name": "Bada Bada Boom",
+      "owner": "Dustin Henderson"
+    },
+    {
+      "id": "change_of_plan",
+      "name": "Change of Plan",
+      "owner": "Dustin Henderson"
+    },
+    {
+      "id": "teamwork_full_circuit",
+      "name": "Teamwork: Full Circuit",
+      "owner": "Dustin Henderson"
+    },
+    {
+      "id": "conviction",
+      "name": "Conviction",
+      "owner": "Michonne Grimes"
+    },
+    {
+      "id": "last_stand",
+      "name": "Last Stand",
+      "owner": "Michonne Grimes"
+    },
+    {
+      "id": "teamwork_throw_down",
+      "name": "Teamwork: Throw Down",
+      "owner": "Michonne Grimes"
+    },
+    {
+      "id": "clean_break",
+      "name": "Clean Break",
+      "owner": "Taurie Cain"
+    },
+    {
+      "id": "invocation_treacherous_crows",
+      "name": "Invocation: Treacherous Crows",
+      "owner": "Taurie Cain"
+    },
+    {
+      "id": "shoulder_the_burden",
+      "name": "Shoulder the Burden",
+      "owner": "Taurie Cain"
+    },
+    {
+      "id": "cross_examination",
+      "name": "Cross-Examination",
+      "owner": "Shane Wiigwaas"
+    },
+    {
+      "id": "lend_a_hand",
+      "name": "Lend a Hand",
+      "owner": "Shane Wiigwaas"
+    },
+    {
+      "id": "wide_open_throttle",
+      "name": "Wide Open Throttle",
+      "owner": "Shane Wiigwaas"
+    },
+    {
+      "id": "bardic_inspiration",
+      "name": "Bardic Inspiration",
+      "owner": "Aestri Yazar"
+    },
+    {
+      "id": "mirrored_illusion",
+      "name": "Mirrored Illusion",
+      "owner": "Aestri Yazar"
+    },
+    {
+      "id": "still_sight",
+      "name": "Still Sight",
+      "owner": "Aestri Yazar"
+    },
+    {
+      "id": "made_for_this",
+      "name": "Made For This",
+      "owner": "Gabriel Soma"
+    },
+    {
+      "id": "troubleshooter",
+      "name": "Troubleshooter",
+      "owner": "Gabriel Soma"
+    },
+    {
+      "id": "scavenger",
+      "name": "Scavenger",
+      "owner": "Gabriel Soma"
+    },
+    {
+      "id": "wicked",
+      "name": "Wicked",
+      "owner": "Sable Ward"
+    },
+    {
+      "id": "invocation_weaving_spiders",
+      "name": "Invocation: Weaving Spiders",
+      "owner": "Sable Ward"
+    },
+    {
+      "id": "strength_in_shadows",
+      "name": "Strength in Shadows",
+      "owner": "Sable Ward"
+    },
+    {
+      "id": "fast_track",
+      "name": "Fast Track",
+      "owner": "Yun-Jin Lee"
+    },
+    {
+      "id": "self_preservation",
+      "name": "Self-Preservation",
+      "owner": "Yun-Jin Lee"
+    },
+    {
+      "id": "smash_hit",
+      "name": "Smash Hit",
+      "owner": "Yun-Jin Lee"
+    },
+    {
+      "id": "wiretap",
+      "name": "Wiretap",
+      "owner": "Ada Wong"
+    },
+    {
+      "id": "reactive_healing",
+      "name": "Reactive Healing",
+      "owner": "Ada Wong"
+    },
+    {
+      "id": "low_profile",
+      "name": "Low Profile",
+      "owner": "Ada Wong"
+    },
+    {
+      "id": "finesse",
+      "name": "Finesse",
+      "owner": "Lara Croft"
+    },
+    {
+      "id": "hardened",
+      "name": "Hardened",
+      "owner": "Lara Croft"
+    },
+    {
+      "id": "specialist",
+      "name": "Specialist",
+      "owner": "Lara Croft"
+    },
+    {
+      "id": "exultation",
+      "name": "Exultation",
+      "owner": "Trevor Belmont"
+    },
+    {
+      "id": "moment_of_glory",
+      "name": "Moment of Glory",
+      "owner": "Trevor Belmont"
+    },
+    {
+      "id": "eyes_of_belmont",
+      "name": "Eyes of Belmont",
+      "owner": "Trevor Belmont"
+    },
+    {
+      "id": "extrasensory_perception",
+      "name": "Extrasensory Perception",
+      "owner": "Eleven"
+    },
+    {
+      "id": "we_see_you",
+      "name": "We See You",
+      "owner": "Eleven"
+    },
+    {
+      "id": "teamwork_soft_spoken",
+      "name": "Teamwork: Soft-Spoken",
+      "owner": "Eleven"
+    },
+    {
+      "id": "do_no_harm",
+      "name": "Do No Harm",
+      "owner": "Orela Rose"
+    },
+    {
+      "id": "duty_of_care",
+      "name": "Duty of Care",
+      "owner": "Orela Rose"
+    },
+    {
+      "id": "rapid_response",
+      "name": "Rapid Response",
+      "owner": "Orela Rose"
+    },
+    {
+      "id": "road_life",
+      "name": "Road Life",
+      "owner": "Vee Boonyasak"
+    },
+    {
+      "id": "one_two_three_four",
+      "name": "One-Two-Three-Four!",
+      "owner": "Vee Boonyasak"
+    },
+    {
+      "id": "ghost_notes",
+      "name": "Ghost Notes",
+      "owner": "Vee Boonyasak"
+    },
+    {
+      "id": "deja_vu",
+      "name": "Déjà Vu",
+      "owner": "General"
+    },
+    {
+      "id": "dark_sense",
+      "name": "Dark Sense",
+      "owner": "General"
+    },
+    {
+      "id": "kindred",
+      "name": "Kindred",
+      "owner": "General"
+    },
+    {
+      "id": "resilience",
+      "name": "Resilience",
+      "owner": "General"
+    },
+    {
+      "id": "small_game",
+      "name": "Small Game",
+      "owner": "General"
+    },
+    {
+      "id": "well_make_it",
+      "name": "We'll Make It",
+      "owner": "General"
+    },
+    {
+      "id": "bound_by_obsession",
+      "name": "Bound by Obsession",
+      "owner": "General"
+    },
+    {
+      "id": "spine_chill",
+      "name": "Spine Chill",
+      "owner": "General"
+    },
+    {
+      "id": "slippery_meat",
+      "name": "Slippery Meat",
+      "owner": "General"
+    },
+    {
+      "id": "no_one_left_behind",
+      "name": "No One Left Behind",
+      "owner": "General"
+    },
+    {
+      "id": "plunderers_instinct",
+      "name": "Plunderer's Instinct",
+      "owner": "General"
+    },
+    {
+      "id": "lightweight",
+      "name": "Lightweight",
+      "owner": "General"
+    },
+    {
+      "id": "premonition",
+      "name": "Premonition",
+      "owner": "General"
+    },
+    {
+      "id": "hope",
+      "name": "Hope",
+      "owner": "General"
+    },
+    {
+      "id": "this_is_not_happening",
+      "name": "This Is Not Happening",
+      "owner": "General"
+    },
+    {
+      "id": "down_to_the_last",
+      "name": "Down to the Last",
+      "owner": "General"
+    },
+        {
+      "id": "will_to_live",
+      "name": "Will to Live",
+      "owner": "General"
+    }
+  ],
+  "killer": [
+   {
+    "id": 1,
+    "name": "A Nurse's Calling",
+    "owner": "The Nurse"
+   },
+   {
+    "id": 2,
+    "name": "Agitation",
+    "owner": "The Trapper"
+   },
+   {
+    "id": 3,
+    "name": "Alien Instinct",
+    "owner": "The Xenomorph"
+   },
+   {
+    "id": 4,
+    "name": "All-Shaking Thunder",
+    "owner": "The Houndmaster"
+   },
+   {
+    "id": 5,
+    "name": "Awakened Awareness",
+    "owner": "The Mastermind"
+   },
+   {
+    "id": 6,
+    "name": "Bamboozle",
+    "owner": "The Clown"
+   },
+   {
+    "id": 7,
+    "name": "Barbecue & Chilli",
+    "owner": "The Cannibal"
+   },
+   {
+    "id": 8,
+    "name": "Batteries Included",
+    "owner": "The Good Guy"
+   },
+   {
+    "id": 9,
+    "name": "Beast of Prey",
+    "owner": "The Huntress"
+   },
+   {
+    "id": 10,
+    "name": "Blood Echo",
+    "owner": "The Oni"
+   },
+   {
+    "id": 11,
+    "name": "Blood Warden",
+    "owner": "The Nightmare"
+   },
+   {
+    "id": 12,
+    "name": "Bloodhound",
+    "owner": "The Wraith"
+   },
+   {
+    "id": 13,
+    "name": "Brutal Strength",
+    "owner": "The Trapper"
+   },
+  {
+    "id": 14,
+    "name": "Call of Brine",
+    "owner": "The Onryō"
+  },
+  {
+    "id": 15,
+    "name": "Celestial Witness",
+    "owner": "The Judgment"
+  },
+  {
+    "id": 16,
+    "name": "Corrupt Intervention",
+    "owner": "The Plague"
+  },
+  {
+    "id": 17,
+    "name": "Coulrophobia",
+    "owner": "The Clown"
+  },
+  {
+    "id": 18,
+    "name": "Coup de Grâce",
+    "owner": "The Twins"
+  },
+  {
+    "id": 19,
+    "name": "Cruel Limits",
+    "owner": "The Demogorgon"
+  },
+  {
+    "id": 20,
+    "name": "Dark Arrogance",
+    "owner": "The Lich"
+  },
+  {
+    "id": 21,
+    "name": "Dark Devotion",
+    "owner": "The Plague"
+  },
+  {
+    "id": 22,
+    "name": "Darkness Revealed",
+    "owner": "The Dredge"
+  },
+  {
+    "id": 23,
+    "name": "Dead Man's Switch",
+    "owner": "The Deathslinger"
+  },
+  {
+    "id": 24,
+    "name": "Deathbound",
+    "owner": "The Executioner"
+  },
+  {
+    "id": 25,
+    "name": "Discordance",
+    "owner": "The Legion"
+  },
+  {
+    "id": 26,
+    "name": "Dissolution",
+    "owner": "The Dredge"
+  },
+  {
+    "id": 27,
+    "name": "Dominance",
+    "owner": "The Dark Lord"
+  },
+  {
+    "id": 28,
+    "name": "Dragon's Grip",
+    "owner": "The Blight"
+  },
+  {
+    "id": 29,
+    "name": "Enduring",
+    "owner": "The Hillbilly"
+  },
+  {
+    "id": 30,
+    "name": "Eruption",
+    "owner": "The Nemesis"
+  },
+  {
+    "id": 31,
+    "name": "Fire Up",
+    "owner": "The Nightmare"
+  },
+  {
+    "id": 32,
+    "name": "Forced Hesitation",
+    "owner": "The Singularity"
+  },
+  {
+    "id": 33,
+    "name": "Forced Penance",
+    "owner": "The Executioner"
+  },
+  {
+    "id": 34,
+    "name": "Forever Entwined",
+    "owner": "The Ghoul"
+  },
+  {
+    "id": 35,
+    "name": "Franklin's Demise",
+    "owner": "The Cannibal"
+  },
+  {
+    "id": 36,
+    "name": "Friends 'Til the End",
+    "owner": "The Good Guy"
+  },
+  {
+    "id": 37,
+    "name": "Furtive Chase",
+    "owner": "The Ghost Face"
+  },
+  {
+    "id": 38,
+    "name": "Game Afoot",
+    "owner": "The Skull Merchant"
+  },
+  {
+    "id": 39,
+    "name": "Gearhead",
+    "owner": "The Deathslinger"
+  },
+  {
+    "id": 40,
+    "name": "Genetic Limits",
+    "owner": "The Singularity"
+  },
+  {
+    "id": 41,
+    "name": "Grim Embrace",
+    "owner": "The Artist"
+  },
+  {
+    "id": 42,
+    "name": "Haywire",
+    "owner": "The Animatronic"
+  },
+  {
+    "id": 43,
+    "name": "Help Wanted",
+    "owner": "The Animatronic"
+  },
+  {
+    "id": 44,
+    "name": "Hex: Blood Favor",
+    "owner": "The Blight"
+  },
+  {
+    "id": 45,
+    "name": "Hex: Crowd Control",
+    "owner": "The Trickster"
+  },
+  {
+    "id": 46,
+    "name": "Hex: Devour Hope",
+    "owner": "The Hag"
+  },
+  {
+    "id": 47,
+    "name": "Hex: Face the Darkness",
+    "owner": "The Knight"
+  },
+  {
+    "id": 48,
+    "name": "Hex: Haunted Ground",
+    "owner": "The Spirit"
+  },
+  {
+    "id": 49,
+    "name": "Hex: Huntress Lullaby",
+    "owner": "The Huntress"
+  },
+  {
+    "id": 50,
+    "name": "Hex: Overture of Doom",
+    "owner": "The Krasue"
+  },
+  {
+    "id": 51,
+    "name": "Hex: Pentimento",
+    "owner": "The Artist"
+  },
+  {
+    "id": 52,
+    "name": "Hex: Retribution",
+    "owner": "The Deathslinger"
+  },
+  {
+    "id": 53,
+    "name": "Hex: Ruin",
+    "owner": "The Hag"
+  },
+  {
+    "id": 54,
+    "name": "Hex: Scared to Death",
+    "owner": "The Slasher"
+  },
+  {
+    "id": 55,
+    "name": "Hex: The Third Seal",
+    "owner": "The Hag"
+  },
+  {
+    "id": 56,
+    "name": "Hex: Two Can Play",
+    "owner": "The Good Guy"
+  },
+  {
+    "id": 57,
+    "name": "Hex: Under Your Thumb",
+    "owner": "The Judgment"
+  },
+  {
+    "id": 58,
+    "name": "Hex: Undying",
+    "owner": "The Blight"
+  },
+  {
+    "id": 59,
+    "name": "Hex: Wretched Fate",
+    "owner": "The Dark Lord"
+  },
+  {
+    "id": 60,
+    "name": "Hoarder",
+    "owner": "The Twins"
+  },
+  {
+    "id": 61,
+    "name": "Hubris",
+    "owner": "The Knight"
+  },
+  {
+    "id": 62,
+    "name": "Human Greed",
+    "owner": "The Dark Lord"
+  },
+  {
+    "id": 63,
+    "name": "Hysteria",
+    "owner": "The Nemesis"
+  },
+  {
+    "id": 64,
+    "name": "I'm All Ears",
+    "owner": "The Ghost Face"
+  },
+  {
+    "id": 65,
+    "name": "Infectious Fright",
+    "owner": "The Plague"
+  },
+  {
+    "id": 66,
+    "name": "Iron Maiden",
+    "owner": "The Legion"
+  },
+  {
+    "id": 67,
+    "name": "Languid Touch",
+    "owner": "The Lich"
+  },
+  {
+    "id": 68,
+    "name": "Leverage",
+    "owner": "The Skull Merchant"
+  },
+  {
+    "id": 69,
+    "name": "Lethal Pursuer",
+    "owner": "The Nemesis"
+  },
+  {
+    "id": 70,
+    "name": "Lightborn",
+    "owner": "The Hillbilly"
+  },
+  {
+    "id": 71,
+    "name": "Machine Learning",
+    "owner": "The Singularity"
+  },
+  {
+    "id": 72,
+    "name": "Mad Grit",
+    "owner": "The Legion"
+  },
+  {
+    "id": 73,
+    "name": "Make Your Choice",
+    "owner": "The Pig"
+  },
+  {
+    "id": 74,
+    "name": "Merciless Storm",
+    "owner": "The Onryō"
+  },
+  {
+    "id": 75,
+    "name": "Monitor & Abuse",
+    "owner": "The Doctor"
+  },
+  {
+    "id": 76,
+    "name": "Nemesis",
+    "owner": "The Oni"
+  },
+  {
+    "id": 77,
+    "name": "No Holds Barred",
+    "owner": "General"
+  },
+  {
+    "id": 78,
+    "name": "No Way Out",
+    "owner": "The Trickster"
+  },
+  {
+    "id": 79,
+    "name": "None Are Free",
+    "owner": "The Ghoul"
+  },
+  {
+    "id": 80,
+    "name": "Nowhere to Hide",
+    "owner": "The Knight"
+  },
+  {
+    "id": 81,
+    "name": "Oppression",
+    "owner": "The Twins"
+  },
+  {
+    "id": 82,
+    "name": "Overcharge",
+    "owner": "The Doctor"
+  },
+  {
+    "id": 83,
+    "name": "Overwhelming Presence",
+    "owner": "The Doctor"
+  },
+  {
+    "id": 84,
+    "name": "Phantom Fear",
+    "owner": "The Animatronic"
+  },
+  {
+    "id": 85,
+    "name": "Pop Goes the Weasel",
+    "owner": "The Clown"
+  },
+  {
+    "id": 86,
+    "name": "Predator",
+    "owner": "The Wraith"
+  },
+  {
+    "id": 87,
+    "name": "Rancor",
+    "owner": "The Spirit"
+  },
+  {
+    "id": 88,
+    "name": "Rapid Brutality",
+    "owner": "The Xenomorph"
+  },
+  {
+    "id": 89,
+    "name": "Ravenous",
+    "owner": "The Krasue"
+  },
+  {
+    "id": 90,
+    "name": "Remember Me",
+    "owner": "The Nightmare"
+  },
+  {
+    "id": 91,
+    "name": "Rampage",
+    "owner": "The Slasher"
+  },
+  {
+    "id": 92,
+    "name": "Scourge Hook: Floods of Rage",
+    "owner": "The Onryō"
+  },
+  {
+    "id": 93,
+    "name": "Scourge Hook: Hangman's Trick",
+    "owner": "The Pig"
+  },
+  {
+    "id": 94,
+    "name": "Scourge Hook: Jagged Compass",
+    "owner": "The Houndmaster"
+  },
+  {
+    "id": 95,
+    "name": "Scourge Hook: Pain Resonance",
+    "owner": "The Artist"
+  },
+  {
+    "id": 96,
+    "name": "Septic Touch",
+    "owner": "The Dredge"
+  },
+  {
+    "id": 97,
+    "name": "Shadowborn",
+    "owner": "The Wraith"
+  },
+  {
+    "id": 98,
+    "name": "Silent Shadow",
+    "owner": "The Slasher"
+  },
+  {
+    "id": 99,
+    "name": "Spirit Fury",
+    "owner": "The Spirit"
+  },
+  {
+    "id": 100,
+    "name": "Starstruck",
+    "owner": "The Trickster"
+  },
+  {
+    "id": 101,
+    "name": "Stridor",
+    "owner": "The Nurse"
+  },
+  {
+    "id": 102,
+    "name": "Superior Anatomy",
+    "owner": "The Mastermind"
+  },
+  {
+    "id": 103,
+    "name": "Jolt",
+    "owner": "General"
+  },
+  {
+    "id": 104,
+    "name": "Surveillance",
+    "owner": "The Pig"
+  },
+  {
+    "id": 105,
+    "name": "Territorial Imperative",
+    "owner": "The Huntress"
+  },
+  {
+    "id": 106,
+    "name": "Thanatophobia",
+    "owner": "The Nurse"
+  },
+  {
+    "id": 107,
+    "name": "Thrilling Tremors",
+    "owner": "The Ghost Face"
+  },
+  {
+    "id": 108,
+    "name": "Tinkerer",
+    "owner": "The Hillbilly"
+  },
+  {
+    "id": 109,
+    "name": "Trail of Torment",
+    "owner": "The Executioner"
+  },
+  {
+    "id": 110,
+    "name": "Turn Back the Clock",
+    "owner": "The First"
+  },
+  {
+    "id": 111,
+    "name": "Ultimate Weapon",
+    "owner": "The Xenomorph"
+  },
+  {
+    "id": 112,
+    "name": "Unbound",
+    "owner": "The Unknown"
+  },
+  {
+    "id": 113,
+    "name": "Undone",
+    "owner": "The Unknown"
+  },
+  {
+    "id": 114,
+    "name": "Unforeseen",
+    "owner": "The Unknown"
+  },
+  {
+    "id": 115,
+    "name": "Unnerving Presence",
+    "owner": "The Trapper"
+  },
+  {
+    "id": 116,
+    "name": "Weave Attunement",
+    "owner": "The Lich"
+  },
+  {
+    "id": 117,
+    "name": "Wandering Eye",
+    "owner": "The Krasue"
+  },
+  {
+    "id": 118,
+    "name": "Zanshin Tactics",
+    "owner": "The Oni"
+  },
+
+  {
+    "id": 119,
+    "name": "Bitter Murmur",
+    "owner": "General"
+  },
+  {
+    "id": 120,
+    "name": "Cull the Weak",
+    "owner": "General"
+  },
+  {
+    "id": 121,
+    "name": "Deerstalker",
+    "owner": "General"
+  },
+  {
+    "id": 122,
+    "name": "Distressing",
+    "owner": "General"
+  },
+  {
+    "id": 123,
+    "name": "Hex: Fortune's Fool",
+    "owner": "General"
+  },
+  {
+    "id": 124,
+    "name": "Hex: No One Escapes Death",
+    "owner": "General"
+  },
+  {
+    "id": 125,
+    "name": "Hex: Thrill of the Hunt",
+    "owner": "General"
+  },
+  {
+    "id": 126,
+    "name": "Insidious",
+    "owner": "General"
+  },
+  {
+    "id": 127,
+    "name": "Iron Grasp",
+    "owner": "General"
+  },
+  {
+    "id": 128,
+    "name": "Keep Them Waiting",
+    "owner": "General"
+  },
+  {
+    "id": 129,
+    "name": "Scourge Hook: Monstrous Shrine",
+    "owner": "General"
+  },
+  {
+    "id": 130,
+    "name": "Scourge Hook: Weeping Wounds",
+    "owner": "General"
+  },
+  {
+    "id": 131,
+    "name": "See How They Run",
+    "owner": "General"
+  },
+  {
+    "id": 132,
+    "name": "Shattered Hope",
+    "owner": "General"
+  },
+  {
+    "id": 133,
+    "name": "Sloppy Butcher",
+    "owner": "General"
+  },
+  {
+    "id": 134,
+    "name": "Spies from the Shadows",
+    "owner": "General"
+  },
+  {
+    "id": 135,
+    "name": "Unrelenting",
+    "owner": "General"
+  },
+    {
+    "id": 136,
+    "name": "Whispers",
+    "owner": "General"
+  }
+
+  ]
+}

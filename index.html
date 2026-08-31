@@ -72,6 +72,14 @@
 
     </button>
 
+    <button class="nav-button" data-page="perkRandomizer">
+
+        <span class="nav-icon">🎲</span>
+
+        <span class="nav-text">Perk Randomizer</span>
+
+    </button>
+
     <button class="nav-button" data-page="collectionPage">
 
        <span class="nav-icon">📚</span>
@@ -350,6 +358,110 @@
 
 </section>
 
+<!-- Perk Randomizer -->
+<section id="perkRandomizer" class="page">
+
+    <h1>🎲 Perk Randomizer</h1>
+
+    <p class="page-description">
+        Create a random 4-perk loadout for your next match.
+    </p>
+
+
+    <!-- Survivor Randomizer -->
+<div class="perk-randomizer-card survivor-randomizer">
+
+    <div class="perk-randomizer-header">
+
+        <div>
+            <h2>🧑 Survivor Perk Randomizer</h2>
+
+            <p>
+                Get 4 random Survivor perks
+            </p>
+        </div>
+
+    </div>
+
+
+    <!-- Survivor Perk Slots -->
+    <div
+        id="survivorPerks"
+        class="perk-randomizer-slots">
+    </div>
+
+
+    <!-- Survivor Buttons -->
+    <div class="perk-randomizer-action">
+
+        <button
+            id="randomizeSurvivorPerksBtn"
+            class="random-btn perk-randomize-btn">
+
+            🎲 Randomize 4 Survivor Perks
+
+        </button>
+
+        <button
+            id="resetSurvivorPerksBtn"
+            class="perk-reset-btn">
+
+            ↻ Reset
+
+        </button>
+
+    </div>
+
+</div>
+
+
+
+    <!-- Killer Randomizer -->
+<div class="perk-randomizer-card killer-randomizer">
+
+    <div class="perk-randomizer-header">
+
+        <div>
+            <h2>🔪 Killer Perk Randomizer</h2>
+
+            <p>
+                Get 4 random Killer perks
+            </p>
+        </div>
+
+    </div>
+
+    <!-- Killer Perk Slots -->
+    <div
+        id="killerPerks"
+        class="perk-randomizer-slots">
+    </div>
+
+
+    <!-- Killer Buttons -->
+    <div class="perk-randomizer-action">
+
+        <button
+            id="randomizeKillerPerksBtn"
+            class="random-btn perk-randomize-btn">
+
+            🎲 Randomize 4 Killer Perks
+
+        </button>
+
+        <button
+            id="resetKillerPerksBtn"
+            class="perk-reset-btn">
+
+            ↻ Reset
+
+        </button>
+
+    </div>
+
+</div>
+</section>
+
 </section>
     
     <section id="collectionPage" class="page">
@@ -438,8 +550,9 @@
 <script src="js/collection.js"></script>
 
 <script src="js/settings.js"></script>
-<script src="js/navigation.js"></script>
 <script src="js/app.js"></script>
+<script src="js/navigation.js"></script>
+<script src="js/perkRandomizer.js"></script>
 
 <!-- Portrait Menu -->
 

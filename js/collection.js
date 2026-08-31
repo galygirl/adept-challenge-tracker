@@ -264,25 +264,7 @@ function createCharacterCard(character) {
 
     return card;
 
-}
-
-sectionCheckbox.addEventListener("change", () => {
-
-    console.log("Section checkbox:", title, sectionCheckbox.checked);
-
-    characters.forEach(character => {
-
-        console.log(character.name);
-
-        character.owned = sectionCheckbox.checked;
-
-    });
-
-    saveCollection();
-
-    renderCollection();
-
-});
+};
 
 // ==============================
 // Base Game
