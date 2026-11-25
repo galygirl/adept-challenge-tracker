@@ -185,7 +185,7 @@
     "name": "All-Kill",
     "type": "original",
     "owned": false,
-    "survivors": [25, 52],
+    "survivors": [25],
     "killers": [23]
   },
   {
@@ -406,6 +406,24 @@
   },
   {
   "id": 46,
+  "key": "aall-kill-comeback",
+  "name": "All-Kill: Comeback",
+  "type": "original",
+  "owned": false,
+  "survivors": [52],
+  "killers": []
+  },
+  {
+  "id": 47,
+  "key": "the-slasher",
+  "name": "The Slasher",
+  "type": "licensed",
+  "owned": false,
+  "survivors": [],
+  "killers": [43]
+  },
+  {
+  "id": 48,
   "key": "the-life-road",
   "name": "The Life Road",
   "type": "original",
@@ -414,21 +432,21 @@
   "killers": []
   },
   {
-    "id": 47,
-    "key": "the-slasher",
-    "name": "The Slasher",
-    "type": "licensed",
-    "owned": false,
-    "survivors": [],
-    "killers": [43]
-  },
-  {
-    "id": 48,
+    "id": 49,
     "key": "Chorus of Sin",
     "name": "Chorus of Sin",
     "type": "original",
     "owned": false,
     "survivors": [54],
     "killers": [44]
+  },
+  {
+    "id": 50,
+    "key": "terrifier",
+    "name": "Terrifier",
+    "type": "licensed",
+    "owned": false,
+    "survivors": [55],
+    "killers": [45]
   }
 ]
