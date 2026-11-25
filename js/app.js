@@ -21,7 +21,7 @@ document.addEventListener("DOMContentLoaded", async () => {
     initializeSurvivors();
     console.log("5. Survivors");
 
-    initializeSurvivorSearch();
+    
     console.log("5.1 Survivor Search");
 
     initializePortraitMenu();
@@ -36,7 +36,7 @@ document.addEventListener("DOMContentLoaded", async () => {
     await initializeCollection();
     console.log("8.5 Collection");
 
-    initializeKillerSearch();
+    
     console.log("8.1 Killer Search");
 
     initializeRandomKiller();

@@ -21,15 +21,6 @@
 
         <div class="sidebar-header">
 
-    <div class="mascot-container">
-
-        <img
-            src="assets/mascot/mascot.png"
-            alt="GalyGirl Mascot"
-            class="mascot">
-
-    </div>
-
     <h1 class="logo">
 
         <span class="logo-top">
@@ -46,7 +37,7 @@
 
 </div>
 
-        <nav class="sidebar-nav">
+        <nav class="top-nav">
 
     <button class="nav-button active" data-page="dashboard">
 
@@ -82,11 +73,11 @@
 
     <button class="nav-button" data-page="collectionPage">
 
-       <span class="nav-icon">📚</span>
+        <span class="nav-icon">📚</span>
 
-       <span class="nav-text">Collection</span>
+        <span class="nav-text">Collection</span>
 
-</button>
+    </button>
 
     <button class="nav-button" data-page="settings">
 
@@ -111,25 +102,91 @@
     <p class="page-description">
         Track your overall Adept Challenge progress.
     </p>
+   
+<!-- Dashboard Information Cards -->
+<div class="dashboard-info-grid">
+
     <!-- Getting Started -->
-<div class="card getting-started-card">
+    <div class="card getting-started-card">
 
-    <h3>📚 Getting Started</h3>
+        <h3>📚 Getting Started</h3>
 
-    <p>
-    Before starting your Adept Challenge, go to
-    <a href="#" 
-       onclick="document.querySelector('[data-page=\'collectionPage\']').click(); return false;"
-       class="collection-link">
-        Collection
-    </a>
-    and select the Survivors and Killers you currently own.
-</p>
+        <p>
+            Before starting your Adept Challenge, go to
+            <a href="#"
+               onclick="document.querySelector('[data-page=\'collectionPage\']').click(); return false;"
+               class="collection-link">
+                Collection
+            </a>
+            and select the Survivors and Killers you currently own.
+        </p>
 
-    <p>
-        🎲 The randomizer will only choose characters
-        you've selected as owned.
-    </p>
+        <p>
+            🎲 The randomizer will only choose characters
+            you've selected as owned.
+        </p>
+
+    </div>
+
+    <!-- Progress & Data Disclaimer -->
+    <div class="card data-disclaimer-card">
+
+        <h3>💾 Progress & Data</h3>
+
+        <p>
+            Your DBD Tracker progress is automatically saved
+            locally in your browser on this device.
+        </p>
+
+        <p>
+            ⚠️ Your progress does not automatically sync
+            between different devices or browsers.
+        </p>
+
+        <p>
+            💡 Clearing your browser data may erase your
+            saved progress. We recommend exporting your
+            progress regularly as a backup.
+        </p>
+
+    </div>
+
+</div>
+
+
+
+<!-- Social Links -->
+<div class="social-links-card">
+
+    <div class="social-heading">
+    <img src="galygirl-logo.png" alt="GalyGirl Mascot">
+    <h3>💜 Connect With GalyGirl</h3>
+</div>
+
+    <div class="social-links">
+
+        <a href="https://www.youtube.com/@GalyGirl"
+           target="_blank" rel="noopener noreferrer"
+           class="social-button youtube">
+            <span class="social-icon youtube-icon">▶</span>
+            YOUTUBE
+        </a>
+
+        <a href="https://www.twitch.tv/galygirl"
+           target="_blank" rel="noopener noreferrer"
+           class="social-button twitch">
+            <span class="social-icon twitch-icon">▣</span>
+            TWITCH
+        </a>
+
+        <a href="https://www.tiktok.com/@galygirl_26"
+           target="_blank" rel="noopener noreferrer"
+           class="social-button tiktok">
+            <span class="social-icon tiktok-icon">♪</span>
+            TIKTOK
+        </a>
+
+    </div>
 
 </div>
 
@@ -161,10 +218,7 @@
             0 / 91 Characters Completed
         </p>
 
-        <p id="progressMessage">
-            Your Adept journey begins!
-        </p>
-
+    
     </div>
 
     <!-- Current Objective + Recent Activity -->
@@ -218,7 +272,7 @@
 
                 <div class="step-content">
                     <h4>Phase 1</h4>
-                    <p>Complete Every Survivor Adept</p>
+                    <p>Complete Every Survivor & Killer Adept</p>
                 </div>
 
             </div>
@@ -254,109 +308,146 @@
     </div>
 
 </section>
-
+           
         <!-- Survivors -->
+<section id="survivors" class="page">
 
-        <section id="survivors" class="page">
+    <h1>Survivors</h1>
 
-            <h1>Survivors</h1>
+    <div class="character-layout">
+        <div class="survivor-left-column">
 
-            <p class="page-description">
-                View and update Survivor Adept challenges.
-            </p>
+    <!-- Survivor Adept Progress -->
+<div class="survivor-progress">
+    <div class="survivor-progress-heading">
+        <strong>Successful Adepts</strong>
+        <span id="survivorAdeptCount">0 / 30</span>
+    </div>
 
-            <div class="page-toolbar">
+    <div class="survivor-progress-track">
+        <div id="survivorAdeptProgressBar"
+             class="survivor-progress-fill"></div>
+    </div>
+</div>
 
-    <input
-        id="survivorSearch"
-        type="text"
-        placeholder="Search survivors...">
+<!-- Current Survivor Section -->
+<div class="current-character-section">
 
-    <button id="randomSurvivorBtn">
-    🎲 Random Survivor
-</button>
+    <h2 class="current-character-title">
+        Current Survivor
+    </h2>
 
-<div class="result-buttons">
+    <!-- Keep this as a DIV -->
+    <div class="current-character-card">
 
-    <button
-        class="result-btn adept"
-        onclick="selectResult('Adept')"
-    >
-        🟢 Adept
-    </button>
+        <div id="currentSurvivorDisplay">
+      <div class="character-question">?</div>
+    </div>
 
-    <button
-        class="result-btn escape"
-        onclick="selectResult('Escaped')"
-    >
-        🔵 Escape
-    </button>
+        <div class="current-survivor-results">
 
-    <button
-        class="result-btn failed"
-        onclick="selectResult('Failed')"
-    >
-        🔴 Failed
-    </button>
+            <button class="result-btn adept"
+                onclick="selectResult('Adept')">
+                🟢 Adept
+            </button>
+
+            <button class="result-btn escape"
+                onclick="selectResult('Escaped')">
+                🔵 Escape
+            </button>
+
+            <button class="result-btn failed"
+                onclick="selectResult('Failed')">
+                🔴 Failed
+            </button>
+
+            </div>
+
+    </div>
+</div>
+<button id="randomSurvivorBtn">
+            🎲 Random Survivor
+        </button>
+</div>
+   <!-- End Left Column -->
+    
+
+    <!-- Existing Survivor Portrait Grid -->
+    <div id="survivorGrid" class="portrait-grid"></div>
 
 </div>
 
-</div>
+</section>
 
-<div id="survivorGrid"
-     class="portrait-grid"></div>
-
-        </section>
-
-        <!-- Killers -->
-
-        <!-- Killers -->
-
+      
+<!-- Killers -->
 <section id="killers" class="page">
 
     <h1>Killers</h1>
 
-    <p class="page-description">
-        View and update Killer Adept challenges.
-    </p>
+       <div class="character-layout">
 
-    <div class="page-toolbar">
+    <!-- Left Column: Progress + Current Killer -->
+    <div class="killer-left-column">
 
-        <input
-            id="killerSearch"
-            type="text"
-            placeholder="Search killers...">
+        <!-- Killer Adept Progress -->
+        <div class="killer-progress">
+            <div class="killer-progress-heading">
+                <strong>Successful Adepts</strong>
+                <span id="killerAdeptCount">0 / 30</span>
+            </div>
 
-        <button id="randomKillerBtn" class="random-btn">
+            <div class="killer-progress-track">
+                <div id="killerAdeptProgressBar"
+                     class="killer-progress-fill"></div>
+            </div>
+        </div>
+
+        <!-- Current Killer Section -->
+        <div class="current-character-section">
+
+            <h2 class="current-character-title">
+                Current Killer
+            </h2>
+
+            <div class="current-character-card">
+
+                <div id="currentKillerDisplay">
+                 <div class="character-question">?</div>
+        </div>
+
+                <div class="current-killer-results">
+
+                    <button class="result-btn adept"
+                        onclick="selectKillerResult('Adept')">
+                        🟢 Adept
+                    </button>
+
+                    <button class="result-btn failed"
+                        onclick="selectKillerResult('Failed')">
+                        🔴 Failed
+                    </button>
+
+                </div>
+
+            </div>
+            <button id="randomKillerBtn" class="random-btn">
             🎲 <span>Random Killer</span>
         </button>
 
-        <div class="result-buttons">
-
-            <button
-                class="result-btn adept"
-                onclick="selectKillerResult('Adept')"
-            >
-                🟢 Adept
-            </button>
-
-            <button
-                class="result-btn failed"
-                onclick="selectKillerResult('Failed')"
-            >
-                🔴 Failed
-            </button>
-
         </div>
 
-    </div>
+       </div>
+    <!-- End Killer Left Column -->
 
-    <div
-        id="killerGrid"
-        class="portrait-grid">
-    </div>
+    <!-- Killer Portrait Grid -->
+    <div id="killerGrid" class="portrait-grid"></div>
+
+</div>
+<!-- End Character Layout -->
 
 </section>
+<!-- End Killers -->
 
 <!-- Perk Randomizer -->
 <section id="perkRandomizer" class="page">
@@ -462,8 +553,6 @@
 </div>
 </section>
 
-</section>
-    
     <section id="collectionPage" class="page">
 
     <h2>📚 Manage Collection</h2>
@@ -608,7 +697,6 @@
 
 <p>💾 Auto Save</p>
 <p>🎲 Random Character</p>
-<p>🔍 Live Search</p>
 <p>📂 Import / Export Progress</p>
 
 <hr>

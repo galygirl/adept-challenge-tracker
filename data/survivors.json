@@ -388,7 +388,7 @@
     "id": 49,
     "name": "Vee Boonyasak",
     "image": "vee.png",
-    "chapter": "Five Nights at Freddy's",
+    "chapter": "Sinister Grace",
     "licensed": true,
     "owned": false
   },
@@ -396,7 +396,7 @@
     "id": 50,
     "name": "Dustin Henderson",
     "image": "dustin.png",
-    "chapter": "Stranger Things",
+    "chapter": "Stranger Things Chapter 2",
     "licensed": true,
     "owned": false
   },
@@ -404,7 +404,7 @@
     "id": 51,
     "name": "Eleven",
     "image": "eleven.png",
-    "chapter": "Stranger Things",
+    "chapter": "Stranger Things Chapter 2",
     "licensed": true,
     "owned": false
   },
@@ -412,8 +412,8 @@
     "id": 52,
     "name": "Kwon Tae-young",
     "image": "kwon.png",
-    "chapter": "Tokyo Ghoul",
-    "licensed": true,
+    "chapter": "All-Kill: Comeback",
+    "licensed": false,
     "owned": false
   },
   {
@@ -421,7 +421,7 @@
     "name": "Shane Wiigwaas",
     "image": "shane.png",
     "chapter": "The Life Road",
-    "licensed": true,
+    "licensed": false,
     "owned": false
   },
   {
@@ -429,6 +429,14 @@
     "name": "Aurora Stardotter",
     "image": "aurora.png",
     "chapter": "Chorus of Sin",
+    "licensed": false,
+    "owned": false
+  },
+  {
+    "id": 55,
+    "name": "Sienna Shaw",
+    "image": "sienna.png",
+    "chapter": "Terrifier",
     "licensed": true,
     "owned": false
   }

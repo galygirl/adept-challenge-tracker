@@ -168,3 +168,91 @@ ul {
     display: block;
     color: #6f42c1;
 }
+
+/* Current Survivor Result Buttons */
+
+.current-survivor-results {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    gap: 10px;
+    width: 100%;
+}
+
+.current-survivor-results .result-btn {
+    flex: 1;
+    min-width: 0;
+    padding: 12px 8px;
+    font-size: 14px;
+    font-weight: 600;
+    border-radius: var(--radius-md);
+    white-space: nowrap;
+    cursor: pointer;
+    transition: var(--transition);
+}
+.current-killer-results {
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+    width: 100%;
+}
+
+.current-killer-results .result-btn {
+    flex: 1;
+    min-width: 0;
+    padding: 12px 8px;
+    font-size: 14px;
+    font-weight: 600;
+    border-radius: var(--radius-md);
+    white-space: nowrap;
+    cursor: pointer;
+}
+#currentSurvivorDisplay h3,
+#currentKillerDisplay h3 {
+    display: block;
+    width: 100%;
+    text-align: center;
+    margin: 12px auto;
+}
+/* Survivor Adept Progress */
+.survivor-progress {
+    margin-bottom: 22px;
+    width: 100%;
+}
+
+.survivor-progress-heading {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 10px;
+    font-size: 15px;
+}
+
+#survivorAdeptCount {
+    color: #a78bfa;
+    font-weight: bold;
+    font-size: 18px;
+}
+
+.survivor-progress-track {
+    width: 100%;
+    height: 12px;
+    background: #3a3548;
+    border-radius: 20px;
+    overflow: hidden;
+}
+
+.survivor-progress-fill {
+    width: 0%;
+    height: 100%;
+    background: #8b5cf6;
+    border-radius: 20px;
+    transition: width 0.4s ease;
+}
+.current-character-section {
+    width: 260px;
+    max-width: 260px;
+    margin-left: -24px;
+    justify-self: start;
+}

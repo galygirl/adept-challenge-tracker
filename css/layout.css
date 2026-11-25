@@ -18,21 +18,25 @@ body{
 
 }
 
-.app{
-
-    display:flex;
-
-    min-height:100vh;
+.app {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
 }
 
-.sidebar{
+.sidebar {
+    width: 100%;
+    flex-shrink: 0;
+}
 
-    width:320px;
-
-    flex-shrink:0;
-
-
-
+.top-nav {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    padding: 0 24px 20px;
+    width: 100%;
 }
 
 /* ==========================================
@@ -118,18 +122,6 @@ body{
 /* ==========================================
    Sidebar Navigation
 ========================================== */
-
-.sidebar-nav{
-
-    display:flex;
-
-    flex-direction:column;
-
-    gap:14px;
-
-    margin-top:25px;
-
-}
 
 .nav-button{
 
@@ -307,4 +299,131 @@ body{
 
     font-size:15px;
 
+}
+
+/* Survivor and Killer Side-by-Side Layout */
+.character-layout {
+    display: grid;
+    grid-template-columns: 260px minmax(0, 1fr);
+    gap: 24px;
+    align-items: start;
+    width: 100%;
+}
+
+.current-character-section {
+    width: 100%;
+    max-width: 260px;
+    margin: 0;
+    justify-self: start;
+}
+
+/* Keep the portrait grid on the right */
+.character-layout .portrait-grid {
+    min-width: 0;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+    gap: 12px;
+}
+
+/* Responsive layout */
+@media (max-width: 800px) {
+    .character-layout {
+        grid-template-columns: 1fr;
+    }
+}
+/* Current Survivor Result Buttons */
+.current-survivor-results {
+    display: flex;
+    flex-direction: row;
+    gap: 8px;
+    width: 100%;
+}
+
+.current-survivor-results .result-btn {
+    flex: 1;
+    min-width: 0;
+    padding: 12px 6px;
+    font-size: 13px;
+    white-space: nowrap;
+}
+/* Purple Border - Current Character Card */
+.current-character-card {
+    border: 2px solid #8b5cf6;
+    border-radius: 18px;
+    box-shadow: 0 0 15px rgba(139, 92, 246, 0.25);
+}
+.killer-left-column {
+    display: flex;
+    flex-direction: column;
+    gap: 22px;
+    width: 260px;
+}
+
+.killer-progress {
+    width: 100%;
+    margin-bottom: 0;
+}
+
+.killer-progress-heading {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 10px;
+    font-size: 15px;
+}
+
+#killerAdeptCount {
+    color: #a78bfa;
+    font-weight: bold;
+    font-size: 18px;
+}
+
+.killer-progress-track {
+    width: 100%;
+    height: 12px;
+    background: #3a3548;
+    border-radius: 20px;
+    overflow: hidden;
+}
+
+.killer-progress-fill {
+    width: 0%;
+    height: 100%;
+    background: #8b5cf6;
+    border-radius: 20px;
+    transition: width 0.4s ease;
+}
+/* Character Portrait Cards */
+.portrait-card {
+    padding: 0;
+    overflow: hidden;
+}
+
+/* Character Portrait Images */
+.portrait-card img {
+    display: block;
+    width: 100%;
+    height: 120px;
+    object-fit: cover;
+    object-position: center;
+}
+#randomSurvivorBtn {
+    width: 100%;
+    margin-top: 20px;
+}
+#randomKillerBtn {
+    width: 100%;
+    margin-top: 20px;
+}
+
+.character-question {
+    width: 100%;
+    height: 245px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #a78bfa;
+    font-size: 100px;
+    font-weight: bold;
+    text-shadow: 0 0 20px rgba(167, 139, 250, 0.6);
 }

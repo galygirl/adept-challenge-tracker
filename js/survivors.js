@@ -21,6 +21,7 @@ function initializeSurvivors() {
 
     });
 
+    updateSurvivorAdeptProgress();
 }
 
 // ==========================================
@@ -43,10 +44,9 @@ function renderSurvivors(survivors) {
 
         card.id = `survivor-${survivor.id}`;
 
-        card.innerHTML = `
-            <img src="assets/survivors/${survivor.image}" alt="${survivor.name}">
-            <div class="portrait-name">${survivor.name}</div>
-        `;
+       card.innerHTML = `
+    <img src="assets/survivors/${survivor.image}" alt="${survivor.name}">
+`;
 
         card.addEventListener("click", () => {
 
@@ -84,6 +84,20 @@ function setCurrentChallenge(survivor, save = true) {
     currentChallenge = survivor.id;
 
     selectedSurvivor = survivor;
+
+    // Update Current Survivor card
+const display = document.getElementById("currentSurvivorDisplay");
+
+if (display) {
+    display.innerHTML = `
+        <img
+            src="assets/survivors/${survivor.image}"
+            alt="${survivor.name}"
+            class="current-character-image">
+
+        <h3>${survivor.name}</h3>
+    `;
+}
 
     const card = document.getElementById(
         `survivor-${survivor.id}`
@@ -256,12 +270,37 @@ function selectResult(result) {
 
     saveProgress();
 
+    updateSurvivorAdeptProgress();
+
     updateDashboard();
 
     closePortraitMenu();
 
 }
+// ==========================================
+// Survivor Adept Progress
+// ==========================================
 
+function updateSurvivorAdeptProgress() {
+
+    const completed = Object.values(progress.survivors)
+        .filter(survivor => survivor.status === "adept")
+        .length;
+
+    const total = 30;
+    const percentage = Math.min((completed / total) * 100, 100);
+
+    const count = document.getElementById("survivorAdeptCount");
+    const bar = document.getElementById("survivorAdeptProgressBar");
+
+    if (count) {
+        count.textContent = `${completed} / ${total}`;
+    }
+
+    if (bar) {
+        bar.style.width = `${percentage}%`;
+    }
+}
 // ==========================================
 // Survivor Borders
 // ==========================================
@@ -353,6 +392,16 @@ const survivors = gameData.survivors.filter(survivor => {
         const survivor =
             survivors[Math.floor(Math.random() * survivors.length)];
 
+     // Update the Current Survivor display while spinning
+    const display = document.getElementById("currentSurvivorDisplay");
+
+if (display) {
+    display.innerHTML = `
+        <img src="assets/survivors/${survivor.image}" alt="${survivor.name}">
+        <h3>${survivor.name}</h3>
+    `;
+}
+
         const card = document.getElementById(
             `survivor-${survivor.id}`
         );
@@ -394,15 +443,7 @@ function finishRandomSelection(survivor) {
         `survivor-${survivor.id}`
     );
 
-    card.scrollIntoView({
-
-        behavior: "smooth",
-
-        block: "center"
-
-    });
-
-}
+   }
 
 // ==========================================
 // Survivor Search

@@ -52,15 +52,7 @@ function finishRandomKiller(killer) {
         `killer-${killer.id}`
     );
 
-    card.scrollIntoView({
-
-        behavior: "smooth",
-
-        block: "center"
-
-    });
-
-}
+   }
 
 function randomKiller() {
 
@@ -124,6 +116,16 @@ const killers = gameData.killers.filter(killer => {
 
         const killer =
             killers[Math.floor(Math.random() * killers.length)];
+
+        // Update the Current Killer display while spinning
+    const display = document.getElementById("currentKillerDisplay");
+
+if (display) {
+    display.innerHTML = `
+        <img src="assets/killers/${killer.image}" alt="${killer.name}">
+        <h3>${killer.name}</h3>
+    `;
+}    
 
         const card = document.getElementById(
             `killer-${killer.id}`
@@ -192,7 +194,9 @@ function selectKillerResult(result) {
         `killer-${selectedKiller.id}`
     );
 
-    card.classList.remove("current-challenge");
+    if (card) {
+        card.classList.remove("current-challenge");
+    }
 
     currentKillerChallenge = null;
 
@@ -202,19 +206,51 @@ function selectKillerResult(result) {
         result.toLowerCase()
     );
 
-    // Save progress
+    // Save killer result
     progress.killers[selectedKiller.id] = {
-
         status: result.toLowerCase()
-
     };
 
+    // Update Dashboard
+    document.getElementById("currentResult").textContent = result;
+
+    // Save randomizer progress
+    progress.randomizer.killer = null;
+    progress.randomizer.result = result;
+
     saveProgress();
+
+    // Update Killer Adept Progress
+    updateKillerAdeptProgress();
 
     updateDashboard();
 
     closePortraitMenu();
 
+}
+// ==========================================
+// Killer Adept Progress
+// ==========================================
+
+function updateKillerAdeptProgress() {
+
+    const completed = Object.values(progress.killers)
+        .filter(killer => killer.status === "adept")
+        .length;
+
+    const total = 30;
+    const percentage = Math.min((completed / total) * 100, 100);
+
+    const count = document.getElementById("killerAdeptCount");
+    const bar = document.getElementById("killerAdeptProgressBar");
+
+    if (count) {
+        count.textContent = `${completed} / ${total}`;
+    }
+
+    if (bar) {
+        bar.style.width = `${percentage}%`;
+    }
 }
 
 function applyKillerStatus(killerId, status) {
@@ -237,6 +273,20 @@ function applyKillerStatus(killerId, status) {
 function setCurrentKillerChallenge(killer) {
 
     selectedKiller = killer;
+    
+    // Update Current Killer card
+const display = document.getElementById("currentKillerDisplay");
+
+if (display) {
+    display.innerHTML = `
+        <img
+            src="assets/killers/${killer.image}"
+            alt="${killer.name}"
+            class="current-character-image">
+
+        <h3>${killer.name}</h3>
+    `;
+}
 
     // Remove previous gold border
     if (currentKillerChallenge !== null) {
@@ -255,11 +305,13 @@ function setCurrentKillerChallenge(killer) {
 
     currentKillerChallenge = killer.id;
 
-    const card = document.getElementById(
-        `killer-${killer.id}`
-    );
+   const card = document.getElementById(
+    `killer-${killer.id}`
+);
 
+if (card) {
     card.classList.add("current-challenge");
+}
 
     document.getElementById("currentCharacter").textContent =
         killer.name;
@@ -290,9 +342,8 @@ function renderKillers(killers) {
         card.dataset.id = killer.id;
 
         card.innerHTML = `
-            <img src="assets/killers/${killer.image}" alt="${killer.name}">
-            <div class="portrait-name">${killer.name}</div>
-        `;
+    <img src="assets/killers/${killer.image}" alt="${killer.name}">
+`;
 
         card.addEventListener("click", () => {
 

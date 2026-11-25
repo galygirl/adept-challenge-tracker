@@ -213,7 +213,7 @@
     "id": 27,
     "name": "The Onryō",
     "image": "K27_TheOnryo_Portrait.png",
-    "chapter": "Ringu",
+    "chapter": "Sadako Rising",
     "licensed": true,
     "owned": false
   },
@@ -271,6 +271,7 @@
     "image": "K34_Chucky_Portrait.png",
     "chapter": "Child's Play",
     "licensed": true,
+    "available": false,
     "owned": false
   },
   {
@@ -323,8 +324,8 @@
   },
   {
     "id": 41,
-    "name": "The Krause",
-    "image": "K41_TheKrause_Portrait.png",
+    "name": "The Krasue",
+    "image": "K41_The Krasue_Portrait.png",
     "chapter": "Sinister Grace",
     "licensed": false,
     "owned": false
@@ -339,6 +340,14 @@
   },
   {
     "id": 43,
+    "name": "The First",
+    "image": "K42_TheFirst_Portrait.png",
+    "chapter": "Stranger Things Chapter 2",
+    "licensed": true,
+    "owned": false
+  },
+  {
+    "id": 44,
     "name": "The Slasher",
     "image": "K43_TheSlasher_Portrait.png",
     "chapter": "The Slasher",
@@ -346,10 +355,18 @@
     "owned": false
   },
   {
-    "id": 44,
-    "name": "The Judgement",
-    "image": "K44_TheJudgement_Portrait.png",
+    "id": 45,
+    "name": "The Judgment",
+    "image": "K44_The Judgment_Portrait.png",
     "chapter": "Chorus of Sin",
+    "licensed": false,
+    "owned": false
+  },
+  {
+    "id": 4,
+    "name": "Art The Clown",
+    "image": "K45_TheTerrifier_Portrait.png",
+    "chapter": "Terrifier",
     "licensed": true,
     "owned": false
   }

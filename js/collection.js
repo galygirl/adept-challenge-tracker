@@ -15,6 +15,7 @@ async function initializeCollection() {
 
 }
 
+
 // ==============================
 // Render Collection
 // ==============================
@@ -39,14 +40,16 @@ function renderCollection() {
 
     renderSectionHeading(container, "👤 Survivors");
 
-renderCharacterSection(
-    container,
-    "Survivors",
-    gameData.survivors.filter(s =>
-        s.chapter !== "Base Game" &&
-        s.available !== false
-    )
-);
+    const allSurvivors = gameData.survivors.filter(s =>
+        s.chapter !== "Base Game"
+    );
+
+    renderCharacterSection(
+        container,
+        "Survivors",
+        allSurvivors
+    );
+
     renderCharacterSection(
         container,
         "🚫 Unavailable Survivors",
@@ -61,14 +64,15 @@ renderCharacterSection(
 
     renderSectionHeading(container, "🔪 Killers");
 
-renderCharacterSection(
-    container,
-    "Killers",
-    gameData.killers.filter(k =>
-        k.chapter !== "Base Game" &&
-        k.available !== false
-    )
-);
+    const allKillers = gameData.killers.filter(k =>
+        k.chapter !== "Base Game"
+    );
+
+    renderCharacterSection(
+        container,
+        "Killers",
+        allKillers
+    );
 
     renderCharacterSection(
         container,
@@ -108,28 +112,31 @@ function renderCharacterSection(container, title, characters) {
     const ownedCount = characters.filter(c => c.owned).length;
     const totalCount = characters.length;
 
+    const showButton =
+        title === "Survivors" || title === "Killers";
+
+    const allSelected =
+        totalCount > 0 && ownedCount === totalCount;
+
     section.innerHTML = `
 
         <div class="collection-section-header">
 
             <div>
-
                 <h3>
-
                     ${title}
 
                     <span class="section-count">
                         (${ownedCount}/${totalCount})
                     </span>
-
                 </h3>
-
             </div>
 
-            <input
-                type="checkbox"
-                class="section-checkbox"
-            >
+            ${showButton ? `
+                <button class="select-all-btn">
+                    ${allSelected ? "Clear All" : "Select All"}
+                </button>
+            ` : ""}
 
         </div>
 
@@ -139,49 +146,36 @@ function renderCharacterSection(container, title, characters) {
 
     const grid = section.querySelector(".collection-grid");
 
-   const sectionCheckbox =
-    section.querySelector(".section-checkbox");
+    const selectButton =
+        section.querySelector(".select-all-btn");
 
-sectionCheckbox.checked =
-    ownedCount === totalCount;
+    if (selectButton) {
 
-sectionCheckbox.indeterminate =
-    ownedCount > 0 &&
-    ownedCount < totalCount;
+        selectButton.addEventListener("click", () => {
 
-// ==============================
-// Section Select All
-// ==============================
+            characters.forEach(character => {
+                character.owned = !allSelected;
+            });
 
-sectionCheckbox.addEventListener("change", () => {
+            saveCollection();
+            renderCollection();
 
-    console.log("Section checkbox:", title, sectionCheckbox.checked);
+        });
+
+    }
 
     characters.forEach(character => {
 
-        console.log(character.name);
+        const card = createCharacterCard(character);
 
-        character.owned = sectionCheckbox.checked;
+        grid.appendChild(card);
 
     });
 
-    saveCollection();
-
-    renderCollection();
-
-});
-
-characters.forEach(character => {
-
-    const card = createCharacterCard(character);
-
-    grid.appendChild(card);
-
-});
-
-container.appendChild(section);
+    container.appendChild(section);
 
 }
+
 
 // ==============================
 // Character Card
