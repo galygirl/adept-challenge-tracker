@@ -338,16 +338,8 @@
     "licensed": true,
     "owned": false
   },
-  {
+    {
     "id": 43,
-    "name": "The First",
-    "image": "K42_TheFirst_Portrait.png",
-    "chapter": "Stranger Things Chapter 2",
-    "licensed": true,
-    "owned": false
-  },
-  {
-    "id": 44,
     "name": "The Slasher",
     "image": "K43_TheSlasher_Portrait.png",
     "chapter": "The Slasher",
@@ -355,7 +347,7 @@
     "owned": false
   },
   {
-    "id": 45,
+    "id": 44,
     "name": "The Judgment",
     "image": "K44_The Judgment_Portrait.png",
     "chapter": "Chorus of Sin",
@@ -363,7 +355,7 @@
     "owned": false
   },
   {
-    "id": 4,
+    "id": 45,
     "name": "Art The Clown",
     "image": "K45_TheTerrifier_Portrait.png",
     "chapter": "Terrifier",
